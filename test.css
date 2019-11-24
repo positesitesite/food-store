@@ -1,0 +1,29 @@
+.title {
+  font-style: 72px;
+  color: #f9b43b;
+  line-height: 1; }
+  .title--color--black {
+    color: #2f3234; }
+  .title--color--white {
+    color: #fff; }
+  .title--centered {
+    text-align: center; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul > li {
+    list-style: none; }

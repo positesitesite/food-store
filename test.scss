@@ -1,0 +1,68 @@
+$yellow: #f9b43b;
+$orange: #e35028;
+$red:#e35028;
+$black: #2f3234;
+$white: #fff;
+
+// .title { 
+//   font-style: 72px;
+//   color: $yellow;
+//   line-height: 1;
+
+//   &--color {
+//     &--black {
+//       color: $black;
+//     }
+
+//     &--white {
+//       color: $white;
+//     }
+//   }
+
+//   &--centered {
+//     text-align: center;
+//   }
+// }
+
+.title {
+  font-style: 72px;
+  color: $yellow;
+  line-height: 1;
+
+  &--color--black {
+      color: $black;
+    }
+
+  &--color--white {
+      color: $white;
+    }
+
+  &--centered {
+    text-align: center;
+  }
+}
+
+// tag styles reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, {
+  margin: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+
+  & > li {
+    list-style: none;
+  }
+}
