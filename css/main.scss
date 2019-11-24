@@ -1,0 +1,17 @@
+// colors
+$yellow: #f9b43b;
+$orange: #e35028;
+$red:#e35028;
+$black: #2f3234;
+
+$z-fixed-menu: 100; // What does this mean?
+
+// normalize
+@import "_misc/normalize.scss";
+
+// setups
+@import "_misc/mixings";
+@import "_misc/widgets";
+@import "_misc/layout";
+
+// blocks
