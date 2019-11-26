@@ -1,45 +1,24 @@
-@font-face {
-  font-family: 'Gagalin';
-  src: url('../../fonts/Gagalin-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+@mixin placecolor($color: #000000) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &:-moz-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
 }
 
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../../fonts/Ubuntu-Light.woff2') format('woff2');
-  font-weight: 300;
-  font-style: normal;
+@mixin vertical-gradient($top-color: #ffffff, $bottom-color: #000000) {
+  background-color: $top-color;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($top-color), to($bottom-color)); /* Chrome, Safari 4+ */
+  background-image: -webkit-linear-gradient(top, $top-color, $bottom-color); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image: -moz-linear-gradient(top, $top-color, $bottom-color); /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, $top-color, $bottom-color); /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, $top-color, $bottom-color); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$top-color, EndColorStr=$bottom-color);
 }
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../../fonts/Ubuntu-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../../fonts/Ubuntu.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Ubuntu';
-  src: url('../../fonts/Ubuntu-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Lifehack';
-  src: url('../../fonts/Lifehack-Medium.woff2') format('woff2'),
-      url('../../fonts/Lifehack-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-
-
