@@ -345,31 +345,31 @@ template {
 
 @font-face {
   font-family: 'Gagalin';
-  src: url("../../fonts/Gagalin-Regular.woff2") format("woff2");
+  src: url("/fonts/Gagalin-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu-Light.woff2") format("woff2");
+  src: url("/fonts/Ubuntu-Light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu-Medium.woff2") format("woff2");
+  src: url("/fonts/Ubuntu-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Ubuntu';
-  src: url("../../fonts/Ubuntu-Bold.woff2") format("woff2");
+  src: url("/fonts/Ubuntu-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Lifehack';
-  src: url("../../fonts/Lifehack-Medium.woff2") format("woff2"), url("../../fonts/Lifehack-Medium.woff") format("woff");
+  src: url("../../fonts/Lifehack-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal; }
 
@@ -414,13 +414,13 @@ body {
 
 .title {
   font-family: 'Gagalin-Regular', Helvetica, sans-serif;
-  font-style: 72px;
+  font-size: 72px;
   color: #f9b43b;
   line-height: 1; }
   .title--color--black {
     color: #2f3234; }
   .title--color--white {
-    color: #ffffff; }
+    color: #fff; }
   .title--centered {
     text-align: center; }
 
@@ -461,16 +461,85 @@ button {
   cursor: pointer;
   color: inherit; }
 
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 12px;
+  z-index: 1; }
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.header__wrapper {
+  margin-left: 15px; }
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  color: rgb(112, 182, 112); }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .nav__item {
-  color: green;
-  background-color: green; }
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .nav__item:after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    margin-left: 15px; }
+  .nav__item:nth-last-child(2):after {
+    display: none; }
+
+.nav__link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase; }
+
+.btn {
+  padding: 12px 15px;
+  border-radius: 5px;
+  background-color: #e35028;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px; }
+
+.promo {
+  background-image: url("/img/bg/main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+
+.promo__container {
+  height: 100px; }
+
+.promo__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }

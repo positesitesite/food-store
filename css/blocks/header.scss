@@ -1,11 +1,18 @@
-.nav__list {
-  display: flex;
-  flex-direction: row;
-  color: green;
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 12px;
+  z-index: 1;
 }
 
-.nav__item {
-  color: green;
-  background-color: green;
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__wrapper {
+  margin-left: 15px;
 }
 

@@ -1,0 +1,17 @@
+.promo {
+  background-image: url("/img/bg/main.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative; // чтобы сделать кнопку абсолютом?
+}
+
+.promo__container {
+  height: 100px;
+}
+
+.promo__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

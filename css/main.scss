@@ -1,21 +1,22 @@
 // colors
 $yellow: #f9b43b;
-$orange: #e35028;
+$orange: #e45028;
 $red:#e35028;
 $black: #2f3234;
-$white: #ffffff;
+$white: #fff;
 
 $z-fixed-menu: 100; // What does this mean?
 
 // normalize
-@import "_misc/normalize.scss";
+@import "_misc/normalize";
 
 // setups
-@import "_misc/mixins.scss";
-@import "_misc/fonts.scss";
-@import "_misc/layout.scss";
+@import "_misc/mixins";
+@import "_misc/fonts";
+@import "_misc/layout";
 
 // blocks
-@import "blocks/header.scss";
-@import "blocks/nav.scss";
-@import "blocks/btn.scss";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/promo";
