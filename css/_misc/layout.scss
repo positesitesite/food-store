@@ -36,7 +36,7 @@ body {
 
 .title { // What is this cycle?
   @include gagalin();
-  font-size: 72px;
+  font-size: 4.5rem /* 72/16 */;
   color: $yellow;
   line-height: 1;
 

@@ -1,0 +1,51 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__column {
+  width: 45%;
+}
+
+.form__row {
+  display: flex;
+  margin-top: .625rem /* 10/16 */;
+
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+}
+
+.form__elem {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  flex: 1 1 auto;
+  margin-left: .625rem /* 10/16 */;
+
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+
+  &-title {
+    color: $white;
+  }
+
+  &-input {
+    border-radius: 6px;
+
+    &--large {
+      height: 4.6875rem /* 75/16 */;
+    }
+  }
+}
+
+//Увеличиваем text-area для комментариев
+
+.form__row > .btn:last-child {
+  background: transparent;
+  @include ubuntu();
+}
+
+
+

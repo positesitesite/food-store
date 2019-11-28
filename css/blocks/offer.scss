@@ -1,0 +1,76 @@
+// 1. Выравниваем элементы по центру превращая во флекс. Задаем одинаковый размер контент бокса. Добавляем марджин между элементами offer__item. Убираем margin-left у первого элемента.
+// 2. Подключаем иконки для каждого элемента
+.offer {
+  display: flex;
+  
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+    width: calc(99% / 3);
+    margin-left: 1.25rem /* 20/16 */;
+  }
+  
+  &__item {
+    &:nth-child(1) {
+      margin-left: 0;
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background-image: url("/img/icons/meat.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: 150px;
+        left: 70px;
+      }
+    }
+  }
+
+  &__item {
+    &:nth-child(2):before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background-image: url("/img/icons/hand.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 150px;
+      left: 70px;
+    }
+  }
+
+  &__item {
+    &:nth-child(3):before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background-image: url("/img/icons/natural.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 150px;
+      left: 70px;
+    }
+  }
+}
+
+.offer__title {
+  @include lifehack();
+  color: $black;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.14px;
+  letter-spacing: -0.6px;
+}

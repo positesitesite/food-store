@@ -1,0 +1,16 @@
+.advantages {
+  background-image: url("/img/bg/best.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-content__title {
+  padding-bottom: 14.375rem /* 230/16 */;
+}
+

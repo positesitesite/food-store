@@ -2,7 +2,7 @@
 .header {
   position: absolute;
   width: 100%;
-  padding-top: 12px;
+  padding-top: .75rem /* 12/16 */;
   z-index: 1;
 }
 
@@ -13,6 +13,6 @@
 }
 
 .header__wrapper {
-  margin-left: 15px;
+  margin-left: .9375rem /* 15/16 */;
 }
 

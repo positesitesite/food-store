@@ -1,0 +1,32 @@
+.fixed-menu {
+  position: fixed;
+  top: 6.25rem /* 100/16 */;
+  right: 3.75rem /* 60/16 */;
+  z-index: 2;
+}
+
+.fixed-menu__dot {
+  display: block;
+  height: .9375rem /* 15/16 */;
+  width: .9375rem /* 15/16 */;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  margin-bottom: .1875rem /* 3/16 */;
+  position: relative;
+
+  &--active {
+   border-color: $white;
+  }
+
+  &:before {
+    content: '';
+    width: .375rem /* 6/16 */;
+    height: .375rem /* 6/16 */;
+    background-color: $white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -4,18 +4,18 @@
 } 
 
 .nav__item {
-  margin-right: 15px;
+  margin-right: .9375rem /* 15/16 */;
   display: flex;
   align-items: center; // Иначе псевдоэлемент, который является потомком, будет прибит к верху 
 
   &:after {
     content: "";
-    width: 4px;
-    height: 4px;
+    width: .25rem /* 4/16 */;
+    height: .25rem /* 4/16 */;
     background-color: $white;
     border-radius: 50%;
     display: block;
-    margin-left: 15px;
+    margin-left: .9375rem /* 15/16 */;
   } 
 
   &:nth-last-child(2) { // Сняли буллет у предпоследнего элемента. У последнего же снято путем удаления модификатора
@@ -28,6 +28,6 @@
 .nav__link {
   text-decoration: none;
   color: $white;
-  font-size: 13px;
+  font-size: .8125rem /* 13/16 */;
   text-transform: uppercase;
 }

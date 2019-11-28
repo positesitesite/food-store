@@ -10,41 +10,71 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+
   <header class="header">
     <div class="container header__container">
-      <img src="./img/icons/logo.svg" alt="Логотип компании" class="logo">
+      <img class="logo" src="/img/icons/logo.svg" alt="Логотип компании">
       <div class="header__wrapper">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">О нас</a>
+              <a class="nav__link" href="#">О нас</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Бургеры</a>
+              <a class="nav__link" href="#">Бургеры</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Команда</a>
+              <a class="nav__link" href="#">Команда</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Меню</a>
+              <a class="nav__link" href="#">Меню</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Отзывы</a>
+              <a class="nav__link" href="#">Отзывы</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Как мы работаем</a>
+              <a class="nav__link" href="#">Как мы работаем</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Контакты</a>
+              <a class="nav__link" href="#">Контакты</a>
             </li>
-            <li class="">
-              <a href="#" class="btn">Заказать</a>
+            <li class="nav__btn">
+              <a class="btn" href="#">Заказать</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
+  <ul class="fixed-menu">
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot fixed-menu__dot--active" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+    <li class="fixed-menu__item">
+      <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
+    </li>
+  </ul>
   <section class="section promo">
     <div class="container">
       <div class="promo__content">
@@ -53,21 +83,175 @@
           <div class="promo__subtitle">натуральные бургеры</div>
         </h1>
       </div>
-      <a href="#" class="promo__scroll-btn"></a>
-
+      <a class="promo__scroll-btn" href="#" aria-label="Прокрутка на следующую секцию"></a>
     </div>
   </section>
-  <aside class="sidebar">
-    <ul class="breadcrumb">
-      <li class="breadcrumb__item active"></li>
-      <li class="breadcrumb__item"></li>
-      <li class="breadcrumb__item"></li>
-      <li class="breadcrumb__item"></li>
-      <li class="breadcrumb__item"></li>
-      <li class="breadcrumb__item"></li>
-      <li class="breadcrumb__item"></li>
-    </ul>
-  </aside>
 
+  <section class="section advantages">
+    <div class="container">
+      <div class="advantages-content">
+        <h1 class="advantages-content__title title title--color--black title--centered">Мы лучшие</h1>
+        <ul class="offer">
+          <li class="offer__item">
+            <div class="offer__title">100% свежее мясо</div>
+            <div class="offer__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+          </li>
+          <li class="offer__item">
+            <div class="offer__title">Ручная  сборка</div>
+            <div class="offer__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+          </li>
+          <li class="offer__item">
+            <div class="offer__title">Натуральные ингредиенты</div>
+            <div class="offer__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="section reviews">
+    <ul class="reviews__list">
+      <li class="reviews__item">
+        <img class="reviews__photo" src="/img/content/maria.png" alt="Фотография Ивана">
+        <div class="reviews__hover">
+          <div class="reviews__hover-title title">Константин Спилберг</div>
+          <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+          <button class="btn" type="button">Подробнее</button>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <img class="reviews__photo" src="/img/content/afreed.png" alt="Фотография Ивана">
+        <div class="reviews__hover">
+          <div class="reviews__hover-title title">Константин Спилберг</div>
+          <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+          <button class="btn" type="button">Подробнее</button>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <img class="reviews__photo" src="/img/content/sofia.png" alt="Фотография Ивана">
+        <div class="reviews__hover">
+          <div class="reviews__hover-title title">Константин Спилберг</div>
+          <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+          <button class="btn" type="button">Подробнее</button>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <img class="reviews__photo" src="/img/content/andrew.png" alt="Фотография Ивана">
+        <div class="reviews__hover">
+          <div class="reviews__hover-title title">Константин Спилберг</div>
+          <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+          <button class="btn" type="button">Подробнее</button>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <img class="reviews__photo" src="/img/content/ivan.png" alt="Фотография Ивана">
+        <div class="reviews__hover">
+          <div class="reviews__hover-title title">Константин Спилберг</div>
+          <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+          <button class="btn" type="button">Подробнее</button>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <img class="reviews__photo" src="/img/content/lisa.png" alt="Фотография Ивана">
+        <div class="reviews__hover">
+          <div class="reviews__hover-title title">Константин Спилберг</div>
+          <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+          <button class="btn" type="button">Подробнее</button>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <img class="reviews__photo" src="/img/content/steven.png" alt="Фотография Ивана">
+        <div class="reviews__hover">
+          <div class="reviews__hover-title title">Константин Спилберг</div>
+          <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+          <button class="btn" type="button">Подробнее</button>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <img class="reviews__photo" src="/img/content/ben.png" alt="Фотография Ивана">
+        <div class="reviews__hover">
+          <div class="reviews__hover-title title">Константин Спилберг</div>
+          <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
+          <button class="btn" type="button">Подробнее</button>
+        </div>
+      </li>
+    </ul>
+  </div> 
+  
+  <section class="section order">
+    <div class="container">
+      <div class="order__wrapper">
+        <h2 class="title order__title">Закажите доставку</h2>
+        <form class="form">
+           <div class="form__column">
+             <div class="form__row">
+               <label class="form__elem">
+                 <div class="form__elem-title">Ваше имя</div>
+                 <input class="form__elem-input" type="text">
+               </label> 
+               <label class="form__elem">
+                 <div class="form__elem-title">Телефон</div>
+                 <input class="form__elem-input" type="text">
+               </label> 
+             </div>
+             <div class="form__row">
+               <label class="form__elem">
+                 <div class="form__elem-title">Улица</div>
+                 <input class="form__elem-input" type="text">
+               </label>
+             </div>
+             <div class="form__row">
+                <label class="form__elem">
+                  <div class="form__elem-title">Дом</div>
+                  <input class="form__elem-input" type="text">
+                </label> 
+                <label class="form__elem">
+                  <div class="form__elem-title">Корпус</div>
+                  <input class="form__elem-input" type="text">
+                </label> 
+                <label class="form__elem">
+                  <div class="form__elem-title">Квартира</div>
+                  <input class="form__elem-input" type="text">
+                </label> 
+                <label class="form__elem">
+                  <div class="form__elem-title">Этаж</div>
+                  <input class="form__elem-input" type="text">
+                </label> 
+             </div>
+           </div>
+           <div class="form__column">
+             <div class="form__row">
+               <label class="form__elem">
+                 <div class="form__elem-title">Комментарий</div>
+                 <input class="form__elem-input form__elem-input--large" type="text">
+               </label>
+             </div>
+             <div class="form__row">
+               <label class="form__elem">
+                 <input class="form__elem-option" type="radio">
+                 <div class="form__elem-title">Потребуется сдача</div>
+               </label>
+               <label class="form__elem">
+                 <input class="form__elem-option" type="radio">
+                 <div class="form__elem-title">Оплата по карте</div>
+               </label>
+             </div>
+             <div class="form__row">
+                <label class="form__elem">
+                  <input class="form__elem-option" type="checkbox">
+                  <div class="form__elem-title">Не перезванивать</div>
+                </label>
+             </div>
+             <div class="form__row">
+               <button class="btn" type="submit">Заказать</button>
+               <button class="btn" type="reset">Очистить</button>
+             </div>
+           </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+   
 </body>
 </html>

@@ -1,0 +1,15 @@
+.order {
+  background-image: url("/img/bg/order.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.order__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order__title {
+  padding-bottom: 50px;
+}

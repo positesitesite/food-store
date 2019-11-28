@@ -10,25 +10,38 @@
   height: 6.25rem /* 100/16 */;
 }
 
-.promo__content {
+.promo {
+  &__content {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.promo__title {
-  margin-left: .9375rem /* 15/16 */;
-}
+  &__title {
+    margin-left: .9375rem /* 15/16 */;
+    
+  }
 
-.promo__subtitle {
-  margin-top: 1.25rem /* 20/16 */;
-  @include lifehack();
-}
+    &__subtitle {
+      margin-top: 1.25rem /* 20/16 */;
+      @include lifehack();
+      font-style: 3.5rem /* 56/16 */;
+      color: $white;
+      line-height: 1;
+    }      
 
-.promo__scroll-btn {
-  width: 1.8125rem /* 29/16 */;
-  height: .9375rem /* 15/16 */;
-  background-image: url("/img/icons/arrow-scroll.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-} 
+  &__scroll-btn {  
+    width: 1.8125rem /* 29/16 */;
+    height: .9375rem /* 15/16 */;
+    background-image: url("/img/icons/arrow-scroll.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    bottom: 1.875rem /* 30/16 */;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+ 
+
