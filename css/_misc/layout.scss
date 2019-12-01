@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 html,
 body {
   height: 100%;
@@ -9,34 +13,34 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  @include ubuntu(); // What does this do?
+  @include ubuntu();
   color: $black;
 }
 
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 940px + 20px; // 20px for what?
+  min-width: 940px + 20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
   width: 940px;
-  margin: 0 auto; // Выравнивает блок по середине.
+  margin: 0 auto;
 }
 
 .section {
   height: 100vh;
   min-height: 650px;
-  display: flex; // Выравниваем секцию по центру
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.title { // What is this cycle?
+.title {
   @include gagalin();
-  font-size: 4.5rem /* 72/16 */;
+  font-size: 4.5rem;
   color: $yellow;
   line-height: 1;
 
@@ -92,6 +96,11 @@ footer {
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  
 }
 
 button {

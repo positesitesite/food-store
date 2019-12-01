@@ -1,0 +1,117 @@
+// team section
+.team__container .accordeon {
+  &__item {
+    margin-top: .75rem /* 12/16 */;
+
+    &:nth-last-child(1) {
+      margin-top: 0;
+    }
+  }
+
+  &__item-hidden {
+    display: block;
+  }
+
+  &__name {
+    @include gagalin();
+    font-size: .875rem /* 14/16 */;
+    color: $white;
+    line-height: 1.758125rem /* 28.13/16 */;
+    position: relative;
+    margin-left: 1.125rem /* 18/16 */;
+  }
+
+  &__name:before {
+    content: '';
+    position: absolute;
+    left: -1.125rem /* 18/16 */;
+    top: .75rem /* 12/16 */;
+    background-image: url('../img/icons/Polygon.svg');
+    background-repeat: no-repeat;
+    width: .625rem /* 10/16 */;
+    height: .625rem /* 10/16 */;
+
+    &:active {
+      background-image: url('../img/icons/Polygon-active.svg'); 
+    }
+  }
+
+  &__content {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+
+    &--reveal {
+      height: 100%;
+    }
+  }
+
+  &__image {
+    height: 10vh;
+  }
+
+  &__textcontent-title {
+    @include ubuntu(bold);
+    font-size: .875rem /* 14/16 */;
+    line-height: 1.500625rem /* 24.01/16 */;
+    color: $white;
+  }
+  
+  &__textcontent-descr {
+    @include ubuntu();
+    font-size: .875rem /* 14/16 */;
+    line-height: 1.500625rem /* 24.01/16 */;
+    color: $white;
+ }
+}
+
+// food-menu section
+.burger-menu .accordeon {
+  position: absolute;
+  right: 0;
+  display: flex;
+  min-height: 100%;
+
+  &__content {
+    width: 0;
+    // display: none;
+    overflow: hidden;
+
+    &--reveal {
+      width: 400px;
+      background-color: $black;
+      color: $white;
+      @include ubuntu;
+    }
+  }
+
+  &__item {
+    display: flex;
+    background-size: auto;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    &:nth-child(1) {
+      background-image: url("../../img/bg/meat-eater.png");
+    }
+
+    &:nth-child(2) {
+      background-image: url("../../img/bg/vegan.png");
+    }
+
+    &:nth-child(3) {
+      background-image: url("../../img/bg/diet.png");
+    }
+  }
+
+  &__item-descr {
+    @include gagalin();
+    color: $white;
+    font-size: 40px;
+    line-height: 63.75px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    background-color: rgba(0,0,0,0.6);
+  }
+}

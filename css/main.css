@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -337,6 +338,9 @@ template {
   font-weight: 500;
   font-style: normal; }
 
+html {
+  font-size: 16px; }
+
 html,
 body {
   height: 100%; }
@@ -419,6 +423,9 @@ footer {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
 button {
   background: transparent;
   border: none;
@@ -488,7 +495,7 @@ button {
   font-size: 0.8125rem; }
 
 .promo {
-  background-image: url("/img/bg/main.png");
+  background-image: url("../img/bg/main.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -521,7 +528,7 @@ button {
 .promo__scroll-btn {
   width: 1.8125rem;
   height: 0.9375rem;
-  background-image: url("/img/icons/arrow-scroll.svg");
+  background-image: url("../img/icons/arrow-scroll.svg");
   background-size: contain;
   background-repeat: no-repeat;
   display: block;
@@ -621,12 +628,13 @@ button {
   margin-left: 0.625rem; }
   .form__elem:nth-child(1) {
     margin-left: 0; }
-  .form__elem-title {
-    color: #fff; }
   .form__elem-input {
     border-radius: 6px; }
     .form__elem-input--large {
       height: 4.6875rem; }
+
+.form__elem-title {
+  color: #fff; }
 
 .form__row > .btn:last-child {
   background: transparent;
@@ -663,7 +671,7 @@ button {
     transform: translate(-50%, -50%); }
 
 .order {
-  background-image: url("/img/bg/order.png");
+  background-image: url("../img/bg/order.png");
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -683,7 +691,7 @@ button {
   padding-bottom: 50px; }
 
 .advantages {
-  background-image: url("/img/bg/best.png");
+  background-image: url("../img/bg/best.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -727,7 +735,7 @@ button {
       position: absolute;
       width: 150px;
       height: 150px;
-      background-image: url("/img/icons/meat.svg");
+      background-image: url("../img/icons/meat.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -739,7 +747,7 @@ button {
     position: absolute;
     width: 150px;
     height: 150px;
-    background-image: url("/img/icons/hand.svg");
+    background-image: url("../img/icons/hand.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -751,7 +759,7 @@ button {
     position: absolute;
     width: 150px;
     height: 150px;
-    background-image: url("/img/icons/natural.svg");
+    background-image: url("../img/icons/natural.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -765,3 +773,285 @@ button {
   font-weight: 500;
   line-height: 28.14px;
   letter-spacing: -0.6px; }
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  background-image: url("/img/bg/team.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%; }
+
+.team__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #2f3234;
+  opacity: .93;
+  width: 50%;
+  height: 100%; }
+
+.team__container {
+  width: 50%; }
+
+.team__container .accordeon__item {
+  margin-top: 0.75rem; }
+  .team__container .accordeon__item:nth-last-child(1) {
+    margin-top: 0; }
+
+.team__container .accordeon__item-hidden {
+  display: block; }
+
+.team__container .accordeon__name {
+  font-family: 'gagalin', Helvetica, sans-serif;
+  font-size: 0.875rem;
+  color: #fff;
+  line-height: 1.75812rem;
+  position: relative;
+  margin-left: 1.125rem; }
+
+.team__container .accordeon__name:before {
+  content: '';
+  position: absolute;
+  left: -1.125rem;
+  top: 0.75rem;
+  background-image: url("../img/icons/Polygon.svg");
+  background-repeat: no-repeat;
+  width: 0.625rem;
+  height: 0.625rem; }
+  .team__container .accordeon__name:before:active {
+    background-image: url("../img/icons/Polygon-active.svg"); }
+
+.team__container .accordeon__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 0;
+  overflow: hidden; }
+  .team__container .accordeon__content--reveal {
+    height: 100%; }
+
+.team__container .accordeon__image {
+  height: 10vh; }
+
+.team__container .accordeon__textcontent-title {
+  font-family: 'ubuntu', Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.50063rem;
+  color: #fff; }
+
+.team__container .accordeon__textcontent-descr {
+  font-family: 'ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 1.50063rem;
+  color: #fff; }
+
+.burger-menu .accordeon {
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%; }
+  .burger-menu .accordeon__content {
+    width: 0;
+    overflow: hidden; }
+    .burger-menu .accordeon__content--reveal {
+      width: 400px;
+      background-color: #2f3234;
+      color: #fff;
+      font-family: 'ubuntu', Helvetica, sans-serif;
+      font-weight: 300; }
+  .burger-menu .accordeon__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-size: auto;
+    background-position: left;
+    background-repeat: no-repeat; }
+    .burger-menu .accordeon__item:nth-child(1) {
+      background-image: url("../../img/bg/meat-eater.png"); }
+    .burger-menu .accordeon__item:nth-child(2) {
+      background-image: url("../../img/bg/vegan.png"); }
+    .burger-menu .accordeon__item:nth-child(3) {
+      background-image: url("../../img/bg/diet.png"); }
+  .burger-menu .accordeon__item-descr {
+    font-family: 'gagalin', Helvetica, sans-serif;
+    color: #fff;
+    font-size: 40px;
+    line-height: 63.75px;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background-color: rgba(0, 0, 0, 0.6); }
+
+.burgers {
+  position: relative;
+  min-width: 100%;
+  background-image: url("../img/bg/selection.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.burgers__scroll {
+  -ms-flex-item-align: center;
+  align-self: center;
+  position: absolute;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.burgers__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.burger__column {
+  width: 50%; }
+  .burger__column:nth-child(2) {
+    padding-left: 20px; }
+
+.burger__descr {
+  font-family: 'ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
+  color: #fff;
+  margin-top: 50px; }
+
+.burger__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .burger__price-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    color: #e35028; }
+  .burger__price-text {
+    font-size: 52px;
+    margin-right: 50px; }
+
+.burger__composition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.burger__composition-list--reveal {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  opacity: .9;
+  border-radius: 8px;
+  width: 55%;
+  height: 350px;
+  left: 90px; }
+
+.burger__composition-button {
+  background-color: #e35028;
+  border-radius: 5px;
+  width: 90px;
+  height: 90px; }
+
+.burger__composition-title {
+  font-family: 'gagalin', Helvetica, sans-serif;
+  color: #fff; }
+
+.burger__composition-list {
+  display: none; }
+
+.burger__composition-item {
+  font-family: 'ubuntu', Helvetica, sans-serif;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #2f3234;
+  margin-left: 90px;
+  margin-top: 30px; }
+  .burger__composition-item:before {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -62px;
+    margin-top: -10px;
+    width: 44px;
+    height: 39px; }
+  .burger__composition-item:after {
+    font-family: 'ubuntu', Helvetica, sans-serif;
+    font-weight: 300;
+    position: absolute;
+    margin-left: 100px; }
+  .burger__composition-item:nth-child(1):before {
+    background-image: url("../../img/icons/beef.svg"); }
+  .burger__composition-item:nth-child(1):after {
+    content: '300 г'; }
+  .burger__composition-item:nth-child(2):before {
+    background-image: url("../../img/icons/buns.svg"); }
+  .burger__composition-item:nth-child(2):after {
+    content: '100 г'; }
+  .burger__composition-item:nth-child(3):before {
+    background-image: url("../../img/icons/salad.svg"); }
+  .burger__composition-item:nth-child(3):after {
+    content: '70 г'; }
+  .burger__composition-item:nth-child(4):before {
+    background-image: url("../../img/icons/sauce.svg"); }
+  .burger__composition-item:nth-child(4):after {
+    content: '150 г'; }
+  .burger__composition-item:nth-child(5):before {
+    background-image: url("../../img/icons/cucumber.svg"); }
+  .burger__composition-item:nth-child(5):after {
+    content: '200 г'; }
+  .burger__composition-item:nth-child(6):before {
+    background-image: url("../../img/icons/cheese.svg"); }
+  .burger__composition-item:nth-child(6):after {
+    content: '80 г'; }
+
+.burger-menu {
+  background-image: url("../../img/bg/burger-section.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.burger-menu__title {
+  padding-left: 50px;
+  padding-top: 150px; }

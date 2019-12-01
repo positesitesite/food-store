@@ -8,22 +8,26 @@ $white: #fff;
 $z-fixed-menu: 100; // What does this mean?
 
 // normalize
-@import "_misc/normalize";
+@import "./_misc/normalize";
 
 // setups
-@import "_misc/mixins";
-@import "_misc/fonts";
-@import "_misc/layout";
+@import "./_misc/mixins";
+@import "./_misc/fonts";
+@import "./_misc/layout";
 
 // blocks
-@import "blocks/header";
-@import "blocks/nav";
-@import "blocks/btn";
-@import "blocks/promo";
-@import "blocks/reviews";
-@import "blocks/form";
-@import "blocks/fixed-menu";
-@import "blocks/order";
-@import "blocks/advantages";
-@import "blocks/content";
-@import "blocks/offer";
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/btn";
+@import "./blocks/promo";
+@import "./blocks/reviews";
+@import "./blocks/form";
+@import "./blocks/fixed-menu";
+@import "./blocks/order";
+@import "./blocks/advantages";
+@import "./blocks/content";
+@import "./blocks/offer";
+@import "./blocks/team";
+@import "./blocks/accordeon";
+@import "./blocks/burgers";
+@import "./blocks/burger-menu";

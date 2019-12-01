@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <!-- Зачем нужна строка снизу? -->
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  --> 
   <title>Mr. Burger
@@ -12,8 +12,8 @@
 <body>
 
   <header class="header">
-    <div class="container header__container">
-      <img class="logo" src="/img/icons/logo.svg" alt="Логотип компании">
+    <div class="header__container container">
+      <img class="logo" src="./img/icons/logo.svg" alt="Логотип компании">
       <div class="header__wrapper">
         <nav class="nav">
           <ul class="nav__list">
@@ -75,6 +75,7 @@
       <a class="fixed-menu__dot" href="#" aria-label="О нас"></a>
     </li>
   </ul>
+
   <section class="section promo">
     <div class="container">
       <div class="promo__content">
@@ -88,7 +89,7 @@
   </section>
 
   <section class="section advantages">
-    <div class="container">
+    <div class="advantages__container container">
       <div class="advantages-content">
         <h1 class="advantages-content__title title title--color--black title--centered">Мы лучшие</h1>
         <ul class="offer">
@@ -109,10 +110,149 @@
     </div>
   </section>
 
+  <section class="section burgers">
+    <div class="burgers__container container">
+      <div class="burger__column">
+        <a class="burger__composition" href="#">
+          <button class="burger__composition-button">
+            <img class="burger__composition-icon" src="./img/icons/burger.svg">
+            <div class="burger__composition-title">Состав</div>
+          </button>
+          <ul class="burger__composition-list burger__composition-list--reveal">
+            <li class="burger__composition-item">
+              Говядина
+            </li>
+            <li class="burger__composition-item">
+              Булочки
+            </li>
+            <li class="burger__composition-item">
+              Зелень
+            </li>
+            <li class="burger__composition-item">
+              Соус
+            </li>
+            <li class="burger__composition-item">
+              Овощи
+            </li>
+            <li class="burger__composition-item">
+              Сыр
+            </li>
+          </ul>
+        </a>
+        <img class="burger__pic" src="./img/content/black-burger.png" alt="Сочный темный бургер">
+        <img class="burger__calories" src="./img/icons/kkal.png" alt="">
+      </div>
+      <div class="burger__column">
+        <div class="burger__title title title--color--white">Dark Beef Burger</div>
+        <div class="burger__descr">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+        <div class="burger__price">
+          <h1 class="burger__price-title title">500
+            <div class="burger__price-text">рублей</div>
+          </h1>
+          <a class="btn" href="#">Заказать</a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="burgers__scroll">
+      <a href="#" class="burgers__scroll-button">
+        <img class="burgers__scroll-button-icon" src="./img/icons/scroll-back.svg" alt="Выбрать предыдущий бургер">
+      </a>
+      <a href="#" class="burgers__scroll-button">
+        <img class="burgers__scroll-button-icon" src="./img/icons/scroll-forward.svg" alt="Выбрать следующий бургер">
+      </a>
+    </div>
+  </section>
+
+  <section class="section team">
+    <div class="team__wrapper">
+      <div class="team__container container">
+        <h1 class="team__title title">Команда</h1>
+        <ul class="accordeon">
+          <li class="accordeon__item">
+            <a class="accordeon__item-hidden" href="#"> 
+              <div class="accordeon__name">Дэниэл Редклиф</div>
+              <div class="accordeon__content">
+                <img class="accordeon__image" src="./img/content/aphex.png" alt="Первый член команды">
+                <div class="accordeon__textcontent">
+                  <div class="accordeon__textcontent-title">Оператор</div>
+                  <div class="accordeon__textcontent-descr">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="accordeon__item">
+            <a class="accordeon__item-hidden" href="#"> 
+              <div class="accordeon__name">Ричард Джеймс</div>
+              <div class="accordeon__content accordeon__content--reveal">
+                <img class="accordeon__image" src="./img/content/aphex.png" alt="Первый член команды">
+                <div class="accordeon__textcontent">
+                  <div class="accordeon__textcontent-title">Оператор</div>
+                  <div class="accordeon__textcontent-descr">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="accordeon__item">
+            <a class="accordeon__item-hidden" href="#"> 
+              <div class="accordeon__name">Джейк Финн</div>
+              <div class="accordeon__content">
+                <img class="accordeon__image" src="./img/content/aphex.png" alt="Первый член команды">
+                <div class="accordeon__textcontent">
+                  <div class="accordeon__textcontent-title">Оператор</div>
+                  <div class="accordeon__textcontent-descr">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="accordeon__item">
+            <a class="accordeon__item-hidden" href="#"> 
+              <div class="accordeon__name">Николай Иванов</div>
+              <div class="accordeon__content">
+                <img class="accordeon__image" src="./img/content/aphex.png" alt="Первый член команды">
+                <div class="accordeon__textcontent">
+                  <div class="accordeon__textcontent-title">Оператор</div>
+                  <div class="accordeon__textcontent-descr">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section burger-menu">
+    <h1 class="burger-menu__title title">Меню</h1>
+    <ul class="accordeon">
+      <li class="accordeon__item">
+        <div class="accordeon__item-descr">Для мясоедов</div>
+        <div class="accordeon__content accordeon__content--reveal">
+          Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+          Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+        </div>
+      </li>
+      <li class="accordeon__item">
+        <div class="accordeon__item-descr">Вегетарианское</div>
+        <div class="accordeon__content">
+          Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+          Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+        </div>
+      </li>
+      <li class="accordeon__item">
+        <div class="accordeon__item-descr">Диетическое</div>
+        <div class="accordeon__content">
+          Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
+          Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.
+        </div>
+      </li>
+    </ul>
+  </section>
+
   <div class="section reviews">
     <ul class="reviews__list">
       <li class="reviews__item">
-        <img class="reviews__photo" src="/img/content/maria.png" alt="Фотография Ивана">
+        <img class="reviews__photo" src="./img/content/maria.png" alt="Фотография Ивана">
         <div class="reviews__hover">
           <div class="reviews__hover-title title">Константин Спилберг</div>
           <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
@@ -120,7 +260,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <img class="reviews__photo" src="/img/content/afreed.png" alt="Фотография Ивана">
+        <img class="reviews__photo" src="./img/content/afreed.png" alt="Фотография Ивана">
         <div class="reviews__hover">
           <div class="reviews__hover-title title">Константин Спилберг</div>
           <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
@@ -128,7 +268,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <img class="reviews__photo" src="/img/content/sofia.png" alt="Фотография Ивана">
+        <img class="reviews__photo" src="./img/content/sofia.png" alt="Фотография Ивана">
         <div class="reviews__hover">
           <div class="reviews__hover-title title">Константин Спилберг</div>
           <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
@@ -136,7 +276,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <img class="reviews__photo" src="/img/content/andrew.png" alt="Фотография Ивана">
+        <img class="reviews__photo" src="./img/content/andrew.png" alt="Фотография Ивана">
         <div class="reviews__hover">
           <div class="reviews__hover-title title">Константин Спилберг</div>
           <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
@@ -144,7 +284,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <img class="reviews__photo" src="/img/content/ivan.png" alt="Фотография Ивана">
+        <img class="reviews__photo" src="./img/content/ivan.png" alt="Фотография Ивана">
         <div class="reviews__hover">
           <div class="reviews__hover-title title">Константин Спилберг</div>
           <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
@@ -152,7 +292,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <img class="reviews__photo" src="/img/content/lisa.png" alt="Фотография Ивана">
+        <img class="reviews__photo" src="./img/content/lisa.png" alt="Фотография Ивана">
         <div class="reviews__hover">
           <div class="reviews__hover-title title">Константин Спилберг</div>
           <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
@@ -160,7 +300,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <img class="reviews__photo" src="/img/content/steven.png" alt="Фотография Ивана">
+        <img class="reviews__photo" src="./img/content/steven.png" alt="Фотография Ивана">
         <div class="reviews__hover">
           <div class="reviews__hover-title title">Константин Спилберг</div>
           <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
@@ -168,7 +308,7 @@
         </div>
       </li>
       <li class="reviews__item">
-        <img class="reviews__photo" src="/img/content/ben.png" alt="Фотография Ивана">
+        <img class="reviews__photo" src="./img/content/ben.png" alt="Фотография Ивана">
         <div class="reviews__hover">
           <div class="reviews__hover-title title">Константин Спилберг</div>
           <p class="reviews__hover-text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>

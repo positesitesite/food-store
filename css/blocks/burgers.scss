@@ -1,0 +1,175 @@
+.burgers {
+  position: relative;
+  min-width: 100%;
+  background-image: url("../img/bg/selection.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.burgers__scroll {
+  align-self: center;
+  position: absolute;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.burgers__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.burger__column {
+  width: 50%;
+  &:nth-child(2) {
+    padding-left: 20px;
+  }
+}
+
+.burger__descr {
+  @include ubuntu;
+  color: $white;
+  margin-top: 50px;
+}
+
+.burger__price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  
+
+  &-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    color: $red;
+  }
+ 
+  &-text {
+    font-size: 52px;
+    margin-right: 50px;
+  }
+}
+
+
+//Floating menu
+  .burger__composition {
+    display: flex;
+    position: relative;
+  }
+
+.burger__composition-list--reveal {
+  display: block;
+  position: absolute;
+  background-color: $white;
+  opacity: .9;
+  border-radius: 8px;
+  width: 55%;
+  height: 350px;
+  left: 90px;
+}
+
+.burger__composition-button {
+  background-color: $red;
+  border-radius: 5px;
+  width: 90px;
+  height: 90px;
+}
+
+.burger__composition-title {
+  @include gagalin();
+  color: $white;
+}
+
+.burger__composition-list {
+  display: none;
+}
+
+.burger__composition-item {
+  @include ubuntu(medium);
+  display: flex;
+  justify-content: space-between;
+  color: $black;
+  margin-left: 90px;
+  margin-top: 30px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -62px;
+    margin-top: -10px;
+    width: 44px;
+    height: 39px;
+  }
+
+  &:after {
+    @include ubuntu();
+    position: absolute;
+    margin-left: 100px;
+  }
+
+  &:nth-child(1) {
+    &:before {
+      background-image: url("../../img/icons/beef.svg");
+    }
+
+    &:after {
+      content: '300 г';
+    }
+  }
+
+  &:nth-child(2) {
+    &:before {
+      background-image: url("../../img/icons/buns.svg");
+    }
+
+    &:after {
+      content: '100 г';
+    }
+  }
+
+  &:nth-child(3) {
+    &:before {
+      background-image: url("../../img/icons/salad.svg");
+    }
+
+    &:after {
+      content: '70 г';
+    }
+  }
+
+  &:nth-child(4) {
+    &:before {
+      background-image: url("../../img/icons/sauce.svg");
+    }
+
+    &:after {
+      content: '150 г';
+    }
+  }
+
+  &:nth-child(5) {
+    &:before {
+      background-image: url("../../img/icons/cucumber.svg");
+    }
+
+    &:after {
+      content: '200 г';
+    }
+  }
+
+  &:nth-child(6) {
+    &:before {
+      background-image: url("../../img/icons/cheese.svg");
+    }
+
+    &:after {
+      content: '80 г';
+    }
+  }
+}

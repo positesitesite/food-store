@@ -1,5 +1,5 @@
 .promo {
-  background-image: url("/img/bg/main.png");
+  background-image: url("../img/bg/main.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -33,7 +33,7 @@
   &__scroll-btn {  
     width: 1.8125rem /* 29/16 */;
     height: .9375rem /* 15/16 */;
-    background-image: url("/img/icons/arrow-scroll.svg");
+    background-image: url("../img/icons/arrow-scroll.svg");
     background-size: contain;
     background-repeat: no-repeat;
     display: block;

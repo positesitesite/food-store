@@ -27,10 +27,6 @@
     margin-left: 0;
   }
 
-  &-title {
-    color: $white;
-  }
-
   &-input {
     border-radius: 6px;
 
@@ -40,6 +36,10 @@
   }
 }
 
+.form__elem-title {
+  color: $white;
+}
+  
 //Увеличиваем text-area для комментариев
 
 .form__row > .btn:last-child {
