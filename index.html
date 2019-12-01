@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <!-- Зачем нужна строка снизу? -->
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  --> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
   <title>Mr. Burger
   </title>
   <link rel="stylesheet" href="./css/main.css">
@@ -41,7 +40,11 @@
             <li class="nav__btn">
               <a class="btn" href="#">Заказать</a>
             </li>
+            <li class="hamburger-menu">
+              <a class="hamburger-menu-icon" href="#"></a>
+            </li>
           </ul>
+
         </nav>
       </div>
     </div>
@@ -77,7 +80,7 @@
   </ul>
 
   <section class="section promo">
-    <div class="container">
+    <div class="promo__container container">
       <div class="promo__content">
         <img class="promo__img" src="./img/content/burger.png" alt="Фотография гамбургера">
         <h1 class="promo__title title">Мы делаем
@@ -140,7 +143,7 @@
           </ul>
         </a>
         <img class="burger__pic" src="./img/content/black-burger.png" alt="Сочный темный бургер">
-        <img class="burger__calories" src="./img/icons/kkal.png" alt="">
+        <img class="burger__calories" src="./img/icons/kkal.png" alt="1200 Каллорий">
       </div>
       <div class="burger__column">
         <div class="burger__title title title--color--white">Dark Beef Burger</div>
@@ -151,14 +154,13 @@
           </h1>
           <a class="btn" href="#">Заказать</a>
         </div>
-        
       </div>
     </div>
     <div class="burgers__scroll">
-      <a href="#" class="burgers__scroll-button">
+      <a class="burgers__scroll-button" href="#">
         <img class="burgers__scroll-button-icon" src="./img/icons/scroll-back.svg" alt="Выбрать предыдущий бургер">
       </a>
-      <a href="#" class="burgers__scroll-button">
+      <a class="burgers__scroll-button" href="#">
         <img class="burgers__scroll-button-icon" src="./img/icons/scroll-forward.svg" alt="Выбрать следующий бургер">
       </a>
     </div>
@@ -392,6 +394,43 @@
     </div>
   </section>
 
+  <section class="section presentation">
+    <div class="presentation__container container">
+      <h1 class="presentation__title title title--color--black title--centered">Как мы работаем</h1>
+      <video class="presentation__video" src="#"></video>
+    </div>
+  </section>
    
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__contact">
+        <div class="footer__contact-address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+        <div class="footer__contact-phone">+7 (812) 377-13-77</div>
+      </div>
+      <ul class="footer__social">
+        <li class="footer__social-icons">
+          <a class="footer__social-icons-pic" href="#">
+            <img class="footer__social-icons-pic" src="./img/icons/vk.svg" alt="Ссылка на вк">
+          </a>
+        </li>
+        <li class="footer__social-icons">
+          <a class="footer__social-icons-pic" href="#">
+            <img class="footer__social-icons-pic" src="./img/icons/fb.svg" alt="Ссылка на фейсбук">
+          </a>
+        </li>
+        <li class="footer__social-icons">
+          <a class="footer__social-icons-pic" href="#">
+            <img class="footer__social-icons-pic" src="./img/icons/inst.svg" alt="Ссылка на инстаграм">
+          </a>
+        </li>
+        <li class="footer__social-icons">
+          <a class="footer__social-icons-pic" href="#">
+            <img class="footer__social-icons-pic" src="./img/icons/twitter.svg" alt="Ссылка на твиттер">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
 </body>
 </html>

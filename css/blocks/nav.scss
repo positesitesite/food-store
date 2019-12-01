@@ -8,6 +8,10 @@
   display: flex;
   align-items: center; // Иначе псевдоэлемент, который является потомком, будет прибит к верху 
 
+  @include tablets {
+    display: none;
+  }
+
   &:after {
     content: "";
     width: .25rem /* 4/16 */;

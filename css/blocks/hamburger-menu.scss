@@ -1,0 +1,38 @@
+$width: 28px;
+$height: 7px;
+
+
+.hamburger-menu-icon {
+  position: relative;
+  display: none;
+  margin-left: 10px;
+  width: $width;
+  height: $height;
+  border-radius: 5px;
+  background-color: $white;
+  
+  @include tablets {
+    display: block;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: $width;
+    margin-top: -12px;
+    height: $height;
+    border-radius: 5px;
+    background-color: $white;
+  }
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: $width;
+    margin-top: 12px;
+    height: $height;
+    border-radius: 5px;
+    background-color: $white;
+  }
+}

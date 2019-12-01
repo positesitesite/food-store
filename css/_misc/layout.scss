@@ -1,5 +1,10 @@
 html {
-  font-size: 16px;
+  @include tablets {
+    font-size: 15px;
+  }
+  @include phones {
+    font-size: 14px;
+  }
 }
 
 html,
@@ -8,7 +13,7 @@ body {
 }
 
 body {
-  font-style: 16px;
+  font-size: 16px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -20,13 +25,16 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 940px + 20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  display: flex;
+  // flex-direction: column;
+  position: relative;
+  max-width: 940px; // Ширина после которой контент больше не растягивается по ширине
+  width: 95%;
   margin: 0 auto;
 }
 

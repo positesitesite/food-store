@@ -7,7 +7,12 @@
 }
 
 .promo__container {
-  height: 6.25rem /* 100/16 */;
+
+  @include tablets {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .promo {
@@ -15,13 +20,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include tablets {
+      flex-direction: column;
+    }
   }
 
   &__title {
     margin-left: .9375rem /* 15/16 */;
-    
-  }
 
+    @include tablets {
+      text-align: center;
+    }
+  }
     &__subtitle {
       margin-top: 1.25rem /* 20/16 */;
       @include lifehack();
@@ -29,7 +40,7 @@
       color: $white;
       line-height: 1;
     }      
-
+    
   &__scroll-btn {  
     width: 1.8125rem /* 29/16 */;
     height: .9375rem /* 15/16 */;
@@ -37,10 +48,14 @@
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
-    position: absolute;
+    position: absolute; //!!! Избавиться от абсолюта
     bottom: 1.875rem /* 30/16 */;
     left: 50%;
     transform: translateX(-50%);
+
+    @include tablets {
+      position: static;
+    }
   }
 }
  
