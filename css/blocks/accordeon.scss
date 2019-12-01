@@ -82,14 +82,17 @@
       background-color: $black;
       color: $white;
       @include ubuntu;
+      padding: 40px;
     }
   }
 
   &__item {
     display: flex;
-    background-size: auto;
+    background-size: cover;
     background-position: left;
     background-repeat: no-repeat;
+    max-height: 100vh;
+    position: relative;
 
     &:nth-child(1) {
       background-image: url("../../img/bg/meat-eater.png");
