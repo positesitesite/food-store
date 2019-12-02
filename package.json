@@ -1,0 +1,18 @@
+{
+  "name": "-help",
+  "version": "1.0.0",
+  "description": "clear",
+  "main": "npm install",
+  "scripts": {
+    "test": "gulp --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "touch gulpfile.fs"
+  },
+  "keywords": [
+    "q!"
+  ],
+  "author": "artur",
+  "license": "UNLICENSED"
+}

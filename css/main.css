@@ -995,9 +995,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  flex-direction: column;
-  }
+  flex-wrap: wrap; }
 
 .burger__column {
   width: 50%; }
@@ -1172,10 +1170,14 @@ button {
   display: -ms-flexbox;
   display: flex;
   margin: 20px 0; }
-  .footer__social-icons {
+  .footer__social-item {
     margin-left: 20px; }
-    .footer__social-icons:nth-child(1) {
+    .footer__social-item:nth-child(1) {
       margin-left: 0; }
-  .footer__social-icons-pic {
-    width: 20px;
-    height: 20px; }
+
+.footer__social-icon-pic {
+  viewBox: 0 0 20 20; }
+
+.test {
+  width: 10px;
+  height: 10px; }
