@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
@@ -12,7 +12,9 @@
 
   <header class="header">
     <div class="header__container container">
-      <img class="logo" src="./img/icons/logo.svg#beef-pic" alt="Логотип компании">
+      <svg class="logo" preserveAspectRatio="xminYMax meet">
+        <use href="./img/icons/sprite.svg#logo"></use>
+      </svg>
       <div class="header__wrapper">
         <nav class="nav">
           <ul class="nav__list">
@@ -87,7 +89,11 @@
           <div class="promo__subtitle">натуральные бургеры</div>
         </h1>
       </div>
-      <a class="promo__scroll-btn" href="#" aria-label="Прокрутка на следующую секцию"></a>
+      <a class="promo__scroll-btn" href="#" aria-label="Прокрутка на следующую секцию">
+        <svg class="promo__scroll-btn-icon" preserveAspectRatio="xminYMax meet">
+          <use href="./img/icons/sprite.svg#arrow-scroll"></use>
+        </svg>
+      </a>
     </div>
   </section>
 
@@ -97,14 +103,23 @@
         <h1 class="advantages-content__title title title--color--black title--centered">Мы лучшие</h1>
         <ul class="offer">
           <li class="offer__item">
+            <svg class="offer__icon" preserveAspectRatio="xminYMax meet">
+              <use href="./img/icons/sprite.svg#meat"></use>
+            </svg>
             <div class="offer__title">100% свежее мясо</div>
             <div class="offer__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
           </li>
           <li class="offer__item">
+            <svg class="offer__icon" preserveAspectRatio="xminYMax meet">
+              <use href="./img/icons/sprite.svg#hand-made"></use>
+            </svg>
             <div class="offer__title">Ручная  сборка</div>
             <div class="offer__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
           </li>
           <li class="offer__item">
+            <svg class="offer__icon" preserveAspectRatio="xminYMax meet">
+              <use href="./img/icons/sprite.svg#natural"></use>
+            </svg>
             <div class="offer__title">Натуральные ингредиенты</div>
             <div class="offer__text">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
           </li>
@@ -409,30 +424,30 @@
       </div>
       <ul class="footer__social-list">
         <li class="footer__social-item">
-          <a class="footer__social-icon" href="#" viewBox="0 0 20 20">
-            <svg class="footer__social-icon-pic">
+          <a class="footer__social-icon" href="#">
+            <svg class="footer__social-icon-pic" viewBox="0 0 125 100" preserveAspectRatio="xminYMax meet">
               <use href="./img/icons/sprite.svg#vk"></use>
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a class="footer__social-icon" href="#">
-            <svg class="footer__social-icon-pic" viewBox="0 0 20 20">
+            <svg class="footer__social-icon-pic" viewBox="0 0 50 50" preserveAspectRatio="xminYMax meet">
               <use href="./img/icons/sprite.svg#fb"></use>
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a class="footer__social-icon" href="#">
-            <svg class="footer__social-icon-pic" viewBox="0 0 20 20">
+            <svg class="footer__social-icon-pic" viewBox="0 0 50 50" preserveAspectRatio="xminYMax meet">
               <use href="./img/icons/sprite.svg#inst"></use>
             </svg>
           </a>
         </li>
         <li class="footer__social-item">
           <a class="footer__social-icon" href="#">
-            <svg class="footer__social-icon-pic" viewBox="0 0 20 20">
-              <use class="test" href="./img/icons/sprite.svg#twitter"></use>
+            <svg class="footer__social-icon-pic" viewBox="0 0 50 50" preserveAspectRatio="xminYMax meet">
+              <use href="./img/icons/sprite.svg#twitter"></use>
             </svg>
           </a>
         </li>

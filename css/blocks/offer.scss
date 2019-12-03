@@ -12,45 +12,10 @@
     width: calc(99% / 3);
     margin-left: 1.25rem /* 20/16 */;
   }
-  
-  &__item {
-    &:nth-child(1) {
-      margin-left: 0;
 
-      &:before {
-        background-image: url("../img/icons/meat.svg");
-        content: '';
-        width: 4.5625rem /* 73/16 */;
-        height: 5.3125rem /* 85/16 */;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: contain;
-      }
-    }
-  }
-
-  &__item {
-    &:nth-child(2):before {
-      background-image: url("../img/icons/hand.svg");
-      content: '';
-      width: 4.5625rem /* 73/16 */;
-      height: 5.3125rem /* 85/16 */;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
-  }
-
-  &__item {
-    &:nth-child(3):before {
-      background-image: url("../img/icons/natural.svg");
-      content: '';
-      width: 4.5625rem /* 73/16 */;
-      height: 5.3125rem /* 85/16 */;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: contain;
-    }
+  &__icon {
+    width: 96.43px;
+    height: 89.25px;
   }
 }
 
