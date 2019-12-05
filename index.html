@@ -89,12 +89,12 @@
           <div class="promo__subtitle">натуральные бургеры</div>
         </h1>
       </div>
-      <a class="promo__scroll-btn" href="#" aria-label="Прокрутка на следующую секцию">
-        <svg class="promo__scroll-btn-icon" viewBox="0 0 28.685 14.479" preserveAspectRatio="xminYMax meet">
-          <use href="./img/icons/sprite.svg#arrow-scroll"></use>
-        </svg>
-      </a>
     </div>
+    <a class="promo__scroll-btn" href="#" aria-label="Прокрутка на следующую секцию">
+      <svg class="promo__scroll-btn-icon" viewBox="0 0 28.685 14.479" preserveAspectRatio="xminYMax meet">
+        <use href="./img/icons/sprite.svg#arrow-scroll"></use>
+      </svg>
+    </a>
   </section>
 
   <section class="section advantages">
@@ -206,60 +206,81 @@
       </a>
     </div>
   </section>
-
+  
   <section class="section team">
     <div class="team__wrapper">
       <div class="team__container container">
         <h1 class="team__title title">Команда</h1>
         <ul class="accordeon">
           <li class="accordeon__item">
-            <a class="accordeon__item-hidden" href="#"> 
-              <div class="accordeon__name">Дэниэл Редклиф</div>
+            <div class="accordeon__indicator">
+              <svg class="accordeon__indicator-icon" viewBox="0 0 9 6" preserveAspectRation="xminYMax">
+                <use href="./img/icons/sprite.svg#unactive"></use>
+              </svg> 
+            </div> 
+            <div class="accordeon__name">Дэниэл Редклиф</div>
+            <a class="accordeon__item-hidden" href="#">
               <div class="accordeon__content">
                 <img class="accordeon__image" src="./img/content/aphex.png" alt="Первый член команды">
                 <div class="accordeon__textcontent">
-                  <div class="accordeon__textcontent-title">Оператор</div>
-                  <div class="accordeon__textcontent-descr">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                  <div class="accordeon__textcontent--title">Оператор</div>
+                  <div class="accordeon__textcontent--descr">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
                 </div>
               </div>
             </a>
           </li>
           <li class="accordeon__item">
-            <a class="accordeon__item-hidden" href="#"> 
-              <div class="accordeon__name">Ричард Джеймс</div>
-              <div class="accordeon__content accordeon__content--reveal">
+            <div class="accordeon__indicator">
+              <svg class="accordeon__indicator-icon accordeon__indicator-icon_active" viewBox="0 0 9 6" preserveAspectRation="xminYMax">
+                <use href="./img/icons/sprite.svg#unactive"></use>
+              </svg> 
+            </div> 
+            <div class="accordeon__name">Дэниэл Редклиф</div>
+            <a class="accordeon__item-hidden" href="#">
+              <div class="accordeon__content accordeon__content_reveal">
                 <img class="accordeon__image" src="./img/content/aphex.png" alt="Первый член команды">
                 <div class="accordeon__textcontent">
-                  <div class="accordeon__textcontent-title">Оператор</div>
-                  <div class="accordeon__textcontent-descr">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                  <div class="accordeon__textcontent--title">Оператор</div>
+                  <div class="accordeon__textcontent--descr">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
                 </div>
               </div>
             </a>
           </li>
           <li class="accordeon__item">
-            <a class="accordeon__item-hidden" href="#"> 
-              <div class="accordeon__name">Джейк Финн</div>
+            <div class="accordeon__indicator">
+              <svg class="accordeon__indicator-icon" viewBox="0 0 9 6" preserveAspectRation="xminYMax">
+                <use href="./img/icons/sprite.svg#unactive"></use>
+              </svg> 
+            </div> 
+            <div class="accordeon__name">Дэниэл Редклиф</div>
+            <a class="accordeon__item-hidden" href="#">
               <div class="accordeon__content">
                 <img class="accordeon__image" src="./img/content/aphex.png" alt="Первый член команды">
                 <div class="accordeon__textcontent">
-                  <div class="accordeon__textcontent-title">Оператор</div>
-                  <div class="accordeon__textcontent-descr">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                  <div class="accordeon__textcontent--title">Оператор</div>
+                  <div class="accordeon__textcontent--descr">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
                 </div>
               </div>
             </a>
           </li>
           <li class="accordeon__item">
-            <a class="accordeon__item-hidden" href="#"> 
-              <div class="accordeon__name">Николай Иванов</div>
+            <div class="accordeon__indicator">
+              <svg class="accordeon__indicator-icon" viewBox="0 0 9 6" preserveAspectRation="xminYMax">
+                <use href="./img/icons/sprite.svg#unactive"></use>
+              </svg> 
+            </div> 
+            <div class="accordeon__name">Дэниэл Редклиф</div>
+            <a class="accordeon__item-hidden" href="#">
               <div class="accordeon__content">
                 <img class="accordeon__image" src="./img/content/aphex.png" alt="Первый член команды">
                 <div class="accordeon__textcontent">
-                  <div class="accordeon__textcontent-title">Оператор</div>
-                  <div class="accordeon__textcontent-descr">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
+                  <div class="accordeon__textcontent--title">Оператор</div>
+                  <div class="accordeon__textcontent--descr">С радостью поможет подобрать идеальный бургер и оформить заказ.</div>
                 </div>
               </div>
             </a>
           </li>
+          
         </ul>
       </div>
     </div>

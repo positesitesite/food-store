@@ -1,69 +1,79 @@
 // team section
+.team__container {
+  width: 100%;
+  align-items: center;
+}
+
 .team__container .accordeon {
-  &__item {
-    margin-top: .75rem /* 12/16 */;
+  width: 85%;
+}
 
-    &:nth-last-child(1) {
-      margin-top: 0;
-    }
+.team__container .accordeon__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: .75rem;
+  &:nth-last-child(1) {
+    margin-top: 0;
   }
+}
 
-  &__item-hidden {
-    display: block;
+.accordeon__indicator-icon {
+  width: 10px;
+  &_active {
+  transform: rotate(180deg);
   }
+}
 
-  &__name {
-    @include gagalin();
-    font-size: .875rem /* 14/16 */;
-    color: $white;
-    line-height: 1.758125rem /* 28.13/16 */;
-    position: relative;
-    margin-left: 1.125rem /* 18/16 */;
-  }
+.team__container .accordeon__name {
+  @include gagalin();
+  font-size: .875rem /* 14/16 */;
+  color: $white;
+  line-height: 1.758125rem /* 28.13/16 */;
+  position: relative;
+  margin-left: 1.125rem /* 18/16 */;
 
-  &__name:before {
+  &:before {
     content: '';
     position: absolute;
     left: -1.125rem /* 18/16 */;
     top: .75rem /* 12/16 */;
-    background-image: url('../img/icons/Polygon.svg');
-    background-repeat: no-repeat;
     width: .625rem /* 10/16 */;
     height: .625rem /* 10/16 */;
-
-    &:active {
-      background-image: url('../img/icons/Polygon-active.svg'); 
-    }
   }
+}
 
-  &__content {
-    display: flex;
-    height: 0;
-    overflow: hidden;
-
-    &--reveal {
-      height: 100%;
-    }
+.accordeon__item-hidden .accordeon__content {
+  display: flex;
+  height: 0;
+  overflow: hidden;
+  &_reveal {
+    padding: 20px;
+    height: 100%;
+    width: 80%;
   }
+}
 
-  &__image {
-    height: 10vh;
-  }
+.accordeon__image {
+  max-width: 100%;
+}
 
-  &__textcontent-title {
+.accordeon__textcontent {
+  margin-left: 5%;
+  &--title {
     @include ubuntu(bold);
     font-size: .875rem /* 14/16 */;
     line-height: 1.500625rem /* 24.01/16 */;
     color: $white;
   }
   
-  &__textcontent-descr {
+  &--descr {
     @include ubuntu();
     font-size: .875rem /* 14/16 */;
     line-height: 1.500625rem /* 24.01/16 */;
     color: $white;
  }
 }
+
 
 // food-menu section
 .burger-menu .accordeon {

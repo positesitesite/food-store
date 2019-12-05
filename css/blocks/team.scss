@@ -16,8 +16,12 @@
   opacity: .93;
   width: 50%;
   height: 100%;
+
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .team__container {
-  width: 50%;
+  flex-direction: column;;
 }

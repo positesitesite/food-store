@@ -23,14 +23,3 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=$top-color, EndColorStr=$bottom-color);
 }
 
-@mixin tablets {
-  @media screen and (max-width: 768px) {
-    @content;
-  }
-}
-
-@mixin phones {
-  @media screen and (max-width: 480px) {
-    @content;
-  }
-}

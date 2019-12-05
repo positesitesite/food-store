@@ -54,7 +54,6 @@
   }
 }
 
-
 //Floating menu
 .burger__composition {
   display: flex;
@@ -84,6 +83,7 @@
   display: flex;
   // flex-wrap: wrap;
   flex-direction: column;
+  width: 60%;
 }
 
 .burger__composition-item {

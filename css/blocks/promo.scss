@@ -16,6 +16,7 @@
   }
 }
 
+// content - title - subtitle - scroll-btn
 .promo {
   &__content {
     display: flex;
@@ -36,6 +37,7 @@
       text-align: center;
     }
   }
+
     &__subtitle {
       margin-top: 1.7rem;
       @include lifehack();
@@ -46,7 +48,9 @@
     
   &__scroll-btn {  
       position: absolute;
-      margin-top: 17.5rem;
+      left: 50%;
+      top: 88%;
+      transform: translateX(-50%);
       width: 1.7925rem;
       height: .905rem;
     }

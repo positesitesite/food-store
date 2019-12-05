@@ -10,18 +10,24 @@
     align-items: center;
     position: relative;
     width: calc(99% / 3);
-    margin-left: 1.25rem /* 20/16 */;
+    margin-left: 1.25rem;
+
+    @include phones {
+      width: 100%;
+    }
   }
 
   &__icon {
     width: 96.43px;
     height: 89.25px;
+    margin-bottom: 1.8125rem;
   }
 }
 
 .offer__title {
   @include lifehack();
   color: $black;
+  margin-bottom: 1.1875rem;
   font-size: 24px;
   font-weight: 500;
   line-height: 28.14px;
