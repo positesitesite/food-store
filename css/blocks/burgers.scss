@@ -56,20 +56,15 @@
 
 
 //Floating menu
-  .burger__composition {
-    display: flex;
-    position: relative;
-  }
+.burger__composition {
+  display: flex;
+}
 
 .burger__composition-list--reveal {
   display: block;
-  position: absolute;
   background-color: $white;
   opacity: .9;
   border-radius: 8px;
-  width: 55%;
-  height: 350px;
-  left: 90px;
 }
 
 .burger__composition-button {
@@ -77,6 +72,7 @@
   border-radius: 5px;
   width: 90px;
   height: 90px;
+  padding: 10px;
 }
 
 .burger__composition-title {
@@ -85,24 +81,35 @@
 }
 
 .burger__composition-list {
-  display: none;
+  display: flex;
+  // flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .burger__composition-item {
   @include ubuntu(medium);
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  // justify-content: space-between;
   color: $black;
-  margin-left: 90px;
-  margin-top: 30px;
+  // align-items: center;
+  // margin-left: 90px;
+  // margin-top: 30px;
+}
+
+.burger__composition-item-icon {
+  height: 10%;
+  width: 10%;
+}
+
+.burger__composition-item-name {
 
   &:before {
     content: '';
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: -62px;
-    margin-top: -10px;
+    display: block;
+    // position: absolute;
+    // margin-left: -62px;
+    // margin-top: -10px;
     width: 44px;
     height: 39px;
   }
@@ -114,9 +121,6 @@
   }
 
   &:nth-child(1) {
-    &:before {
-      background-image: url("../../img/icons/beef.svg");
-    }
 
     &:after {
       content: '300 г';
@@ -124,9 +128,6 @@
   }
 
   &:nth-child(2) {
-    &:before {
-      background-image: url("../../img/icons/buns.svg");
-    }
 
     &:after {
       content: '100 г';
@@ -134,9 +135,6 @@
   }
 
   &:nth-child(3) {
-    &:before {
-      background-image: url("../../img/icons/salad.svg");
-    }
 
     &:after {
       content: '70 г';
@@ -144,9 +142,6 @@
   }
 
   &:nth-child(4) {
-    &:before {
-      background-image: url("../../img/icons/sauce.svg");
-    }
 
     &:after {
       content: '150 г';
@@ -154,9 +149,6 @@
   }
 
   &:nth-child(5) {
-    &:before {
-      background-image: url("../../img/icons/cucumber.svg");
-    }
 
     &:after {
       content: '200 г';
@@ -164,12 +156,34 @@
   }
 
   &:nth-child(6) {
-    &:before {
-      background-image: url("../../img/icons/cheese.svg");
-    }
 
     &:after {
       content: '80 г';
     }
   }
+}
+
+.burger__calories {
+  position: relative;
+  width: 14%;
+  text-align: center;
+  color: $white;
+}
+
+.burger__calories-numbers {
+  position: absolute;
+  @include gagalin();
+  font-size: 20px;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.burger__calories-text {
+  @include gagalin();
+  font-size: 14px;
+}
+
+.burger__composition-icon {
+  width: 75%;
 }
