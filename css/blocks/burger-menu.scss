@@ -1,9 +1,10 @@
 .burger-menu {
+  justify-content: space-between;
+  align-items: stretch;
   background-image: url("../../img/bg/burger-section.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  justify-content: flex-start;
 }
 
 .burger-menu__title {

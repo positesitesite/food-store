@@ -19,19 +19,43 @@
 .burgers__container {
   display: flex;
   flex-wrap: wrap;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .burger__column {
-  width: 50%;
+  width: calc(50% - 20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include tablets {
+    width: 60%;
+  }
+
+  &:nth-child(1) {
+    @include tablets {
+    flex-direction: row;
+    }
+  }
+
   &:nth-child(2) {
     padding-left: 20px;
+
+    @include tablets {
+      align-self: center;
+      text-align: center;
+    }
   }
 }
 
 .burger__descr {
   @include ubuntu;
   color: $white;
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 .burger__price {
@@ -49,29 +73,23 @@
   }
  
   &-text {
-    font-size: 52px;
-    margin-right: 50px;
+    font-size: 3.25rem;
+    margin-right: 3.125rem;
   }
 }
 
 //Floating menu
 .burger__composition {
   display: flex;
-}
-
-.burger__composition-list--reveal {
-  display: block;
-  background-color: $white;
-  opacity: .9;
-  border-radius: 8px;
+  position: relative;
 }
 
 .burger__composition-button {
   background-color: $red;
   border-radius: 5px;
-  width: 90px;
-  height: 90px;
-  padding: 10px;
+  width: 5.625rem;
+  height: 5.625rem;
+  padding: .625rem;
 }
 
 .burger__composition-title {
@@ -80,87 +98,85 @@
 }
 
 .burger__composition-list {
-  display: flex;
-  // flex-wrap: wrap;
-  flex-direction: column;
   width: 60%;
+  height: 0%;
+  overflow: hidden;
+  display: flex;
+  position: absolute;
+  left: 5.625rem;
+  flex-direction: column;
+  background-color: $white;
+  opacity: .9;
+  border-radius: 8px;
+}
+
+.burger__calories-icon {
+  width: 60px;
+}
+
+.burger__composition-list--reveal {
+  height: 31.25rem;
 }
 
 .burger__composition-item {
-  @include ubuntu(medium);
   display: flex;
+  align-items: center;
+  @include ubuntu(medium);
   flex-wrap: wrap;
-  // justify-content: space-between;
+  padding: 20px;
   color: $black;
-  // align-items: center;
-  // margin-left: 90px;
-  // margin-top: 30px;
 }
 
 .burger__composition-item-icon {
-  height: 10%;
-  width: 10%;
+  height: auto;
+  width: 21%;
 }
 
-.burger__composition-item-name {
-
-  &:before {
-    content: '';
-    display: block;
-    // position: absolute;
-    // margin-left: -62px;
-    // margin-top: -10px;
-    width: 44px;
-    height: 39px;
-  }
-
+.burger__composition-item {
   &:after {
     @include ubuntu();
-    position: absolute;
-    margin-left: 100px;
+    margin-left: auto;
   }
 
   &:nth-child(1) {
-
     &:after {
       content: '300 г';
     }
   }
 
   &:nth-child(2) {
-
     &:after {
-      content: '100 г';
+      content: '300 г';
     }
   }
 
   &:nth-child(3) {
-
     &:after {
       content: '70 г';
     }
   }
 
   &:nth-child(4) {
-
     &:after {
       content: '150 г';
     }
   }
 
   &:nth-child(5) {
-
     &:after {
       content: '200 г';
     }
   }
 
   &:nth-child(6) {
-
     &:after {
       content: '80 г';
     }
   }
+}
+
+.burger__composition-item-name {
+  margin-left: 50px;  
 }
 
 .burger__calories {
@@ -177,6 +193,10 @@
   left: 50%;
   top: 45%;
   transform: translate(-50%, -50%);
+
+  @include tablets {
+    top: 6%;
+  }
 }
 
 .burger__calories-text {
@@ -186,4 +206,19 @@
 
 .burger__composition-icon {
   width: 75%;
+}
+
+.burger__calories {
+  width: auto;
+  height: auto;
+  max-height: 75px;
+  max-width: 60px;
+}
+
+.burger__pic {
+  width: 100%;
+
+  @include tablets {
+    width: 80%;
+  }
 }

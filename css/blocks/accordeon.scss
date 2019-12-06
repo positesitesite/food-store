@@ -12,6 +12,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: .75rem;
+
   &:nth-last-child(1) {
     margin-top: 0;
   }
@@ -19,6 +20,7 @@
 
 .accordeon__indicator-icon {
   width: 10px;
+
   &_active {
   transform: rotate(180deg);
   }
@@ -46,6 +48,7 @@
   display: flex;
   height: 0;
   overflow: hidden;
+
   &_reveal {
     padding: 20px;
     height: 100%;
@@ -59,6 +62,7 @@
 
 .accordeon__textcontent {
   margin-left: 5%;
+  
   &--title {
     @include ubuntu(bold);
     font-size: .875rem /* 14/16 */;
@@ -77,60 +81,70 @@
 
 // food-menu section
 .burger-menu .accordeon {
-  position: absolute;
-  right: 0;
   display: flex;
   min-height: 100%;
+}
 
-  &__content {
-    width: 0;
-    overflow: hidden;
+.burger-menu .accordeon__content {
+  width: 0;
+  overflow: hidden;
 
-    &--reveal {
-      width: 400px;
-      background-color: $black;
-      color: $white;
-      @include ubuntu;
-      padding: rem(40px);
-    }
-  }
-
-  &__item {
-    display: flex;
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-    max-height: 100vh;
-    position: relative;
-    background-color: rgba(0,0,0,0.6);
-
-    &:after {
-      content: '';
-      display: block;
-    }
-
-    &:nth-child(1) {
-      background-image: url("../../img/bg/meat-eater.png");
-    }
-
-    &:nth-child(2) {
-      background-image: url("../../img/bg/vegan.png");
-    }
-
-    &:nth-child(3) {
-      background-image: url("../../img/bg/diet.png");
-    }
-  }
-
-  &__item-descr {
-    @include gagalin();
+  &--reveal {
+    width: 400px;
+    background-color: $black;
     color: $white;
-    font-size: rem(40px);
-    line-height: 63.75px;
-    margin-bottom: 50px;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    transform: rotate(180deg);
-    background-color: rgba(0,0,0,0.6);
+    @include ubuntu;
+    padding: rem(40px);
+  }
+}
+
+.burger-menu .accordeon__item {
+  display: flex;
+  max-height: 100vh;
+  position: relative;
+}
+
+.burger-menu .accordeon__item-title {
+  @include gagalin();
+  color: $white;
+  font-size: rem(40px);
+  line-height: 63.75px;
+  margin-bottom: 50px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  position: relative;
+}
+
+.burger-menu .accordeon__item-pic:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.burger-menu .accordeon__item-pic {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  &--meat {
+    background-image: url("../../img/bg/meat-eater.png");
+  }
+
+  &--veg {
+    background-image: url("../../img/bg/vegan.png");
+  }
+
+  &--diet {
+    background-image: url("../../img/bg/diet.png");
   }
 }
