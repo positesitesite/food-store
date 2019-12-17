@@ -7,18 +7,14 @@
   background-position: center;
 }
 
-.burgers__scroll {
-  align-self: center;
-  position: absolute;
-  width: 95%;
-  display: flex;
-  justify-content: space-between;
-}
 
 
 .burgers__container {
   display: flex;
   flex-wrap: wrap;
+  width: 95vw;
+  margin: 0;
+  justify-content: center;
 
   @include tablets {
     flex-direction: column;
@@ -63,11 +59,9 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-end;
-  
 
   &-title {
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-end;
     color: $red;
   }
@@ -82,6 +76,11 @@
 .burger__composition {
   display: flex;
   position: relative;
+
+  @include tablets {
+    position: absolute;
+    left: 5.3125rem;
+  }
 }
 
 .burger__composition-button {
@@ -98,8 +97,7 @@
 }
 
 .burger__composition-list {
-  width: 60%;
-  height: 0%;
+  height: 0;
   overflow: hidden;
   display: flex;
   position: absolute;
@@ -115,27 +113,39 @@
 }
 
 .burger__composition-list--reveal {
-  height: 31.25rem;
+  height: 24.55rem;
 }
 
 .burger__composition-item {
   display: flex;
+  margin: 12px 50px 12px 20px;
   align-items: center;
   @include ubuntu(medium);
-  flex-wrap: wrap;
-  padding: 20px;
   color: $black;
 }
 
+.burger__composition-close {
+  &-button {
+    right: 0;
+    top: 1.25rem;
+    position: absolute;
+  }
+
+  &-icon {
+    height: 1.25rem;
+  }
+}
+
 .burger__composition-item-icon {
-  height: auto;
-  width: 21%;
+  height: 2.4375rem;
+  width: 2.4375rem;
 }
 
 .burger__composition-item {
   &:after {
     @include ubuntu();
     margin-left: auto;
+    white-space: nowrap;
   }
 
   &:nth-child(1) {
@@ -146,7 +156,7 @@
 
   &:nth-child(2) {
     &:after {
-      content: '300 г';
+      content: '100 г';
     }
   }
 
@@ -176,7 +186,8 @@
 }
 
 .burger__composition-item-name {
-  margin-left: 50px;  
+  margin-left: 1.375rem; 
+  margin-right: 1rem;
 }
 
 .burger__calories {
@@ -184,6 +195,11 @@
   width: 14%;
   text-align: center;
   color: $white;
+
+  @include tablets {
+    position: absolute;
+    right: 5rem;
+  }
 }
 
 .burger__calories-numbers {
@@ -215,10 +231,14 @@
   max-width: 60px;
 }
 
-.burger__pic {
+.burger__photo {
   width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  @include tablets {
-    width: 80%;
-  }
+.burger__pic {
+  max-width: 100%;
 }

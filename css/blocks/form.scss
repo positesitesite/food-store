@@ -30,6 +30,9 @@
 
   &-input {
     border-radius: 6px;
+    border-width:2px;
+    border-style:inset;
+    resize: none;
 
     &--large {
       height: 4.6875rem /* 75/16 */;
@@ -48,5 +51,7 @@
   @include ubuntu();
 }
 
-
+.form__error {
+  color: red;
+}
 

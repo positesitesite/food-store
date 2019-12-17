@@ -1,9 +1,10 @@
 // colors
 $yellow: #f9b43b;
 $orange: #e45028;
-$red:#e35028;
+$red: #e35028;
 $black: #2f3234;
 $white: #fff;
+$grey: #2f3234;
 
 $z-fixed-menu: 100; // What does this mean?
 
@@ -15,6 +16,7 @@ $z-fixed-menu: 100; // What does this mean?
 @import "./_misc/fonts";
 @import "./_misc/media";
 @import "./_misc/layout";
+@import "./_misc/widgets";
 
 // blocks
 @import "blocks/header";
@@ -35,3 +37,5 @@ $z-fixed-menu: 100; // What does this mean?
 @import "blocks/burger-menu";
 @import "blocks/presentation";
 @import "blocks/footer";
+@import "blocks/slider";
+@import "blocks/modal";

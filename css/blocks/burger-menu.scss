@@ -1,5 +1,6 @@
 .burger-menu {
   position: relative;
+  align-items: flex-end;
   background-image: url("../../img/bg/burger-section.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,7 +9,7 @@
 
 .burger-menu__title {
   position: absolute;
-  top: 150px;
-  left: 50px;
+  top: 7.125rem;
+  left: 1.9375rem;
 }
 

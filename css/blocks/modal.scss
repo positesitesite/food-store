@@ -1,0 +1,36 @@
+.modal {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-color: rgba(47, 50, 52, .9);
+
+  &--active {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.modal__wrapper {
+  position: relative;
+  width: 80%;
+  background-color: $white;
+  padding: 30px;
+  box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.2);
+}
+
+.modal__content {
+  @include ubuntu();
+}
+
+.modal__close-button {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  width: 1.25rem;
+  height: 1.25rem;
+}

@@ -1,19 +1,56 @@
 .nav {
   width: 100%;
+  
+  @include tablets {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .nav__list {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
-  @include tablets {
-    justify-content: flex-end;
+.nav__hidden-list {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  background-color: $grey;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &--reveal {
+    display: flex;
+    overflow: hidden;
   }
-} 
+}
+//li - last item
+.nav__hidden-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.nav__hidden-link {
+  @include ubuntu();
+  color: $white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.nav__hidden-close-btn-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
 
 .nav__item {
-  // margin-right: .9375rem /* 15/16 */;
   display: flex;
   flex: 1 1 auto;
   align-items: center; // Иначе псевдоэлемент, который является потомком, будет прибит к верху 

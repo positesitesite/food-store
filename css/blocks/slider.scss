@@ -1,0 +1,23 @@
+.slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider__items {
+  display: flex;
+}
+
+.slider__item {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__control {
+  align-self: center;
+  position: absolute;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}

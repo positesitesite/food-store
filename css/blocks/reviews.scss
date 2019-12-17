@@ -1,3 +1,10 @@
+.reviews {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .reviews__list {
   height: 100%;
   display: flex;
@@ -33,21 +40,26 @@
   top: 0;
   bottom: 0;
   background-color: rgba($black, 0.7);
-  padding: 3.125rem /* 50/16 */ 1.25rem /* 20/16 */;
+  padding: 3.125rem 1.25rem;
   transition: opacity .4s;
 }
 
 .reviews__hover-title {
   color: $white;
-  font-size: .875rem /* 14/16 */;
-  margin-bottom: 1.25rem /* 20/16 */;
+  font-size: .875rem;
+  margin-bottom: 1.25rem;
 }
 
 .reviews__hover-text {
+  max-height: 180px;
+  overflow: hidden;
   @include ubuntu;
-  // line-height: 1.5rem /* 24/16 */;
-  line-height: 1.875rem /* 30/16 */;
-  margin-bottom: .9375rem /* 15/16 */;
+  line-height: 1.875rem;
+  margin-bottom: .9375rem;
+}
+
+.reviews__hover-text--active {
+
 }
 
 .reviews__hover > .btn {
