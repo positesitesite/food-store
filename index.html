@@ -123,6 +123,7 @@
       </li>
     </ul>
 
+  <div class="main">
     <section class="section promo" id="sect-promo">
       <div class="promo__container container">
         <div class="promo__content">
@@ -1201,8 +1202,6 @@
       </ul>
     </div>
 
-    
-
     <section class="section order" id="sect-order">
       <div class="container">
         <div class="order__wrapper">
@@ -1260,17 +1259,17 @@
               </div>
               <div class="form__row">
                 <label class="form__elem">
-                  <input class="form__elem-option" type="radio" name="payment">
+                  <input class="form__elem-option" type="radio" name="payment" value="Потребуется сдача">
                   <div class="form__elem-title">Потребуется сдача</div>
                 </label>
                 <label class="form__elem">
-                  <input class="form__elem-option" type="radio" name="payment">
+                  <input class="form__elem-option" type="radio" name="payment" value="Оплата по карте">
                   <div class="form__elem-title">Оплата по карте</div>
                 </label>
               </div>
               <div class="form__row">
                 <label class="form__elem">
-                  <input class="form__elem-option" type="checkbox" name="callback">
+                  <input class="form__elem-option" type="checkbox" name="callback" value="Не перезванивать">
                   <div class="form__elem-title">Не перезванивать</div>
                 </label>
               </div>
@@ -1294,6 +1293,7 @@
         <video class="presentation__video" src="#"></video>
       </div>
     </section>
+  </div>
 
     <footer class="footer" id="sect-footer">
       <div class="footer__container container">
@@ -1352,11 +1352,13 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/modules/burger-menu.js"></script>
     <script src="./js/modules/menu.js"></script>
     <script src="./js/modules/nav-menu.js"></script>
     <script src="./js/modules/slider.js"></script>
     <script src="./js/modules/modal-reviews.js"></script>
     <script src="./js/modules/form.js"></script>
+    <script src="./js/modules/onepage-scroll.js"></script>
   </body>
 </html>

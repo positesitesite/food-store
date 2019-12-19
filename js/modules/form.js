@@ -1,36 +1,35 @@
 const Myform = document.querySelector('.form'); // Доступ к тегу форм
 let form = new FormData;
 Myform.addEventListener('submit', e => { // Запрещаем перезагрузку сраницы при нажатии на кнопку
-    e.preventDefault();
-    if (validateForm(Myform)) {
-        const data = {
-            name: Myform.elements.name.value,
-            phone: Myform.elements.phone.value,
-            comment: 'comment',
-            street: Myform.elements.street.value,
-            house: Myform.elements.house.value,
-            apartment: Myform.elements.apartment.value,
-            floor: Myform.elements.floor.value,
-            to: 'b1and@mail.ru'
-        };
-        for (const key in data) {
-            form.append(key, data[key]);
-        }
+  e.preventDefault();
+  if (validateForm(Myform)) {
+    const data = {
+      name: Myform.elements.name.value,
+      phone: Myform.elements.phone.value,
+      comment: 'comment',
+      street: Myform.elements.street.value,
+      house: Myform.elements.house.value,
+      apartment: Myform.elements.apartment.value,
+      floor: Myform.elements.floor.value,
+      to: 'b1and@mail.ru'
+    };
+    for (const key in data) {
+      form.append(key, data[key]);
+    }
 
-        const xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = processReqChange;
-        function processReqChange() {
-            if (xhr.readyState == 4) {
-                if (xhr.status == 200) {
-                    // удачно
-                    console.log(JSON.parse(xhr.response))
-                } else {
-                    console.error('error');
-                }
-            }
-        }
-        xhr.open('POST', "https://webdev-api.loftschool.com/sendmail");
-        xhr.send(form);
+  const xhr = new XMLHttpRequest();
+  xhr.onreadystatechange = processReqChange;
+  function processReqChange() {
+    if (xhr.readyState == 4) {
+      if (xhr.status == 200) {
+        console.log(JSON.parse(xhr.response))
+      } else {
+        console.error('error');
+      }
+    }
+  }
+  xhr.open('POST', "https://webdev-api.loftschool.com/sendmail");
+  xhr.send(form);
 
    }
 });
