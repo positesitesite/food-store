@@ -33,6 +33,8 @@
     border-width:2px;
     border-style:inset;
     resize: none;
+    height: 2rem;
+    margin-bottom: .75rem;
 
     &--large {
       height: 4.6875rem /* 75/16 */;

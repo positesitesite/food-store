@@ -1,5 +1,7 @@
 .nav {
   width: 100%;
+  margin-left: 1.25rem;
+  margin-top: .6875rem;
   
   @include tablets {
     display: flex;
@@ -11,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .nav__hidden-list {

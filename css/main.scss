@@ -17,6 +17,7 @@ $z-fixed-menu: 100; // What does this mean?
 @import "./_misc/media";
 @import "./_misc/layout";
 @import "./_misc/widgets";
+@import "./_misc/onepage-scroll";
 
 
 
@@ -41,3 +42,4 @@ $z-fixed-menu: 100; // What does this mean?
 @import "blocks/footer";
 @import "blocks/slider";
 @import "blocks/modal";
+@import "blocks/map";

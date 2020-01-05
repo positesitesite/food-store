@@ -5,26 +5,26 @@
   z-index: 2;
   
   &__item {
-    margin-bottom: .375rem /* 6/16 */;
+    margin-bottom: .375rem;
   }
 
   &__dot {
     display: block;
-    height: .9375rem /* 15/16 */;
-    width: .9375rem /* 15/16 */;
+    height: .9375rem;
+    width: .9375rem;
     border-radius: 50%;
     border: 1px solid transparent;
-    margin-bottom: .1875rem /* 3/16 */;
+    margin-bottom: .1875rem;
     position: relative;
   
     &--active {
-     border-color: $white;
+      border-color: $white;
     }
   
     &:before {
       content: '';
-      width: .375rem /* 6/16 */;
-      height: .375rem /* 6/16 */;
+      width: .375rem;
+      height: .375rem;
       background-color: $white;
       border-radius: 50%;
       position: absolute;

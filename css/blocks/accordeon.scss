@@ -18,20 +18,16 @@
   }
 }
 
-.team__container .accordeon__item {
-  
-  margin-top: .75rem;
+// .team__container .accordeon__item {
 
-  &:nth-last-child(1) {
-    margin-top: 0;
-  }
+//   &:nth-last-child(1) {
+//     margin-top: 0;
+//   }
 
-  @include tablets {
-    justify-content: center; 
-    // display: flex;
-    // flex-wrap: wrap;
-  }
-}
+//   @include tablets {
+//     justify-content: center; 
+//   }
+// }
 
 .accordeon__indicator-icon {
   width: 10px;
@@ -54,10 +50,11 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  flex-direction: column;
   height: 0;
   width: 0;
   overflow: hidden;
+  z-index: 10;
+  transition: .5s;
   
   &--reveal {
     width: 100%;
@@ -85,6 +82,7 @@
 
 .accordeon__textcontent {
   margin-left: 5%;
+  width: 45%;
   
   &--title {
     @include ubuntu(bold);

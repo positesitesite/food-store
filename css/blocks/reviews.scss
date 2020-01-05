@@ -54,12 +54,8 @@
   max-height: 180px;
   overflow: hidden;
   @include ubuntu;
-  line-height: 1.875rem;
+  line-height: 1.475rem;
   margin-bottom: .9375rem;
-}
-
-.reviews__hover-text--active {
-
 }
 
 .reviews__hover > .btn {

@@ -22,7 +22,7 @@ Myform.addEventListener('submit', e => { // Запрещаем перезагр�
   function processReqChange() {
     if (xhr.readyState == 4) {
       if (xhr.status == 200) {
-        console.log(JSON.parse(xhr.response))
+        console.log(JSON.parse(xhr.response));
       } else {
         console.error('error');
       }
@@ -31,7 +31,7 @@ Myform.addEventListener('submit', e => { // Запрещаем перезагр�
   xhr.open('POST', "https://webdev-api.loftschool.com/sendmail");
   xhr.send(form);
 
-   }
+  }
 });
 
 function validateForm(form) {

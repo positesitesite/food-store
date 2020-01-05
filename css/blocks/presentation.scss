@@ -1,12 +1,49 @@
-.presentation {
-  background-image: url(../../img/bg/presentation.png);
+.section.presentation {
+  background-image: url("../../img/bg/presentation.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.presentation__video {
-  display: block;
-  border: 2px black solid;
-  margin: 0 auto;
+.presentation__video.container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 660px;
 }
+
+.presentation__video-player {
+  width: 100%;
+  height: 100%;
+}
+
+.presentation__video-controls {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+  background-color: $grey;
+  width: 100%;
+}
+
+button#play-pause {
+  padding: 10px;
+}
+
+.presentation__video-progress {
+  position: relative;
+  width: 60vw;
+}
+
+.presentation__video-progress-bar {
+  left: 0;
+}
+
+.presentation__video-progress-id {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(0%, 20%);
+}
+
