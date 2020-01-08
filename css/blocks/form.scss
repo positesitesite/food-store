@@ -2,15 +2,25 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @include tablets {
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 .form__column {
-  width: 45%;
+  width: 47%;
+
+  @include phones {
+    width: 95%;
+  }
 }
 
 .form__row {
   display: flex;
-  margin-top: .625rem /* 10/16 */;
+  margin-top: .625rem;
+  justify-content: center;
 
   &:nth-child(1) {
     margin-top: 0;
@@ -22,24 +32,58 @@
   flex-direction: column;
   width: 15%;
   flex: 1 1 auto;
-  margin-left: .625rem /* 10/16 */;
+  margin-left: .625rem;
 
   &:nth-child(1) {
     margin-left: 0;
   }
 
   &-input {
+    padding: 12px 21px;
     border-radius: 6px;
     border-width:2px;
     border-style:inset;
     resize: none;
     height: 2rem;
-    margin-bottom: .75rem;
+    margin-bottom: .05rem;
 
     &--large {
-      height: 4.6875rem /* 75/16 */;
+      margin-bottom: 1.1875rem;
+      height: 4.6875rem;
+      width: 100%;
+
+      @include phones {
+        height: 9.6875rem;
+      }
+    }
+
+    &::-webkit-input-placeholder {
+      font-size: 14px;
+      // padding: 21 12;
+    }
+    &::-moz-placeholder {
+      font-size: 14px;
+    }
+    &:-ms-input-placeholder {
+      font-size: 14px;
+    }
+    &:-moz-placeholder {
+      font-size: 14px;
     }
   }
+}
+
+.form__elem-selector {
+  flex-direction: row;
+  align-items: center;
+}
+
+.form__elem-option {
+  margin-right: .775rem;
+}
+
+.form__row-button {
+  margin-top: 2rem;
 }
 
 .form__elem-title {
@@ -47,7 +91,6 @@
 }
   
 //Увеличиваем text-area для комментариев
-
 .form__row > .btn:last-child {
   background: transparent;
   @include ubuntu();

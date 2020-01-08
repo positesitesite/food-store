@@ -7,6 +7,12 @@
   background-position: center;
 }
 
+.burger__title.title {
+  @include phones {
+    font-size: 3.5rem;
+  }
+}
+
 .burgers__container {
   display: flex;
   flex-wrap: wrap;
@@ -27,7 +33,7 @@
   justify-content: center;
 
   @include tablets {
-    width: 60%;
+    width: 100%;
   }
 
   &:nth-child(1) {
@@ -51,6 +57,10 @@
   color: $white;
   margin-top: 1.25rem;
   margin-bottom: .625rem;
+
+  @include phones {
+    font-size: 1.05rem;
+  }
 }
 
 .burger__price {
@@ -79,6 +89,10 @@
   @include tablets {
     position: absolute;
     left: 5.3125rem;
+  }
+
+  @include phones {
+    left: 0.1125rem;
   }
 }
 
@@ -199,6 +213,11 @@
     position: absolute;
     right: 5rem;
   }
+
+  @include phones {
+    position: absolute;
+    right: 0.1125rem;
+  }
 }
 
 .burger__calories-numbers {
@@ -239,5 +258,5 @@
 }
 
 .burger__pic {
-  max-width: 100%;
+  max-width: 65%;
 }

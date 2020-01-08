@@ -5,12 +5,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 100%; //!!!
-  // width: 100vh; //!!! Почему отображается только пол экрана если использовать вместо max-width?
+  max-width: 100%;
+}
+
+.team__title {
+  margin-bottom: 30px;
 }
 
 .team__wrapper {
-  display: flex; //!!! Почему блок перестает центрироваться если написать display: block. Разве значение width работает по-разному для flex и db?
+  display: flex;
   align-items: center;
   background-color: #2f3234;
   opacity: .93;
@@ -23,5 +26,6 @@
 }
 
 .team__container {
-  flex-direction: column;;
+  flex-direction: column;
+  align-items: center;
 }

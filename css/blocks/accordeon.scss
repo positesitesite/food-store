@@ -11,26 +11,28 @@
   align-items: flex-start;
 
   @include tablets {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-// .team__container .accordeon__item {
-
-//   &:nth-last-child(1) {
-//     margin-top: 0;
-//   }
-
-//   @include tablets {
-//     justify-content: center; 
-//   }
-// }
-
 .accordeon__indicator-icon {
+  display: block;
   width: 10px;
+  position: absolute;
+  left: -10%;
+  top: .625rem;
+
+  @include tablets {
+    left: 23%;
+    top: .625rem;
+  }
+
+  @include phones {
+    left: 12%;
+  }
 
   &--active {
   transform: rotate(180deg);
@@ -43,12 +45,18 @@
   color: $white;
   line-height: 1.758125rem /* 28.13/16 */;
   position: relative;
-  margin-left: 1.125rem /* 18/16 */;
+  margin-left: 3.025rem;
+  margin-bottom: 1.25rem;
+
+  @include tablets {
+    text-align: center;
+    margin-left: 0;
+    font-size: 1.5625rem;
+  }
 }
 
 .team .accordeon__content {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   height: 0;
   width: 0;
@@ -58,9 +66,23 @@
   
   &--reveal {
     width: 100%;
-    padding: 1.25rem;
+    padding: 1.25rem 0;
     height: 100%;
+
+    @include tablets {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
+
+  @include tablets {
+    align-items: center;
+  }
+}
+
+.accordeon__item {
+  width: 100%;
 }
 
 .accordeon__item-hidden {
@@ -89,6 +111,7 @@
     font-size: .875rem /* 14/16 */;
     line-height: 1.500625rem /* 24.01/16 */;
     color: $white;
+    padding-bottom: .625rem;
   }
   
   &--descr {
@@ -105,7 +128,7 @@
 
 //! food-menu section
 .burger-menu .accordeon {
-  width: 74%;
+  // width: 74%;
   height: 100%;
   display: flex;
   justify-content: flex-end;
@@ -152,6 +175,7 @@
   height: 100%;
   overflow: hidden;
   display: flex;
+  max-width: 541px;
   
   &--reveal {
     width: 100%;

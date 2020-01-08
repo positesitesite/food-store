@@ -21,6 +21,11 @@
       opacity: 1;
     }
   }
+
+  @include tablets {
+    flex-basis: 50%;
+    height: 25%;
+  }
 }
 
 .reviews__photo {

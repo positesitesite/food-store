@@ -21,7 +21,8 @@
 }
 
 .slider__control {
-  position: absolute;
+  position: relative;
+  margin: 0 auto;
   display: flex;
   width: 95%;
   align-self: center;
