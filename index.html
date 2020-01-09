@@ -976,6 +976,7 @@
 
       <section class="section burger-menu" id="sect-burger-menu">
         <h1 class="burger-menu__title title title--color--white">Меню</h1>
+        
         <ul class="accordeon">
           <li class="accordeon__item">
             <a class="accordeon__trigger accordeon__trigger--meat-eater">
@@ -1038,9 +1039,9 @@
       </section>
 
       <section class="section reviews" id="sect-review">
-        <div class="modal">
+        <div class="modal modal__reviews">
           <div class="modal__wrapper">
-            <div class="modal__content">Lorem ipsum dolor sit amet.</div>
+            <div class="modal__content">This text will be replaced by JS</div>
             <div class="modal__close-button" id="burgerMenuClose">
               <svg
                 class="modal__close-icon"
@@ -1204,46 +1205,45 @@
           Как мы работаем
         </h1>
         <div class="presentation__video container">
-          <video class="presentation__video-player" src="media/burger.mp4"></video>
+
+          <video preload="true" class="presentation__video-player" id="video" src="media/burger.mp4" poster="img/bg/player-preview.png"></video>
+
+          <button class="presentation__video-begin">
+            <svg class="presentation__video-begin-icon" viewBox="0 0 164.36 254.96">
+              <use href="img/icons/sprite.svg#begin"></use>
+            </svg>
+          </button>
 
           <div class="presentation__video-controls">
 
             <button class="presentation__video-controls-play-pause" id="play-pause">
               <svg class="play-pause-icon" width="22" height="29" viewBox="0 0 22 29">
-                <use href="img/icons/sprite.svg#play"></use>
+                <use id="play-pause-icon-trigger" href="img/icons/sprite.svg#play"></use> //change to #pause
               </svg>
             </button>
           
-            <div class="presentation__video-progress">
-              <div class="presentation__video-progress-bar">
-                <svg class="play-pause-icon" width="100%" height="6" viewBox="0 0 600 6">
-                  <use href="img/icons/sprite.svg#progress"></use>
-                </svg>
-              </div>
-              <div class="presentation__video-progress-id">
-                <svg class="play-pause-icon" width="18" height="18" viewBox="0 0 18 18">
-                  <use href="img/icons/sprite.svg#id"></use>
-                </svg>
-              </div>
+            <div class="presentation__video-progress" preload="metadata">
+              <svg class="presentation__video-progress-bar" id="progress-bar" width="100%" height="6">
+                <use href="img/icons/sprite.svg#progress"></use>
+              </svg>
+              <svg class="presentation__video-progress-id" id="progress-id" width="18" height="18" viewBox="0 0 18 18">
+                <use href="img/icons/sprite.svg#id"></use>
+              </svg>
             </div>
 
-            <button class="presentation__video-controls-mute-unmute" id="play-pause">
+            <button class="presentation__video-controls-mute-unmute" id="mute-unmute">
               <svg class="mute-unmute-icon" width="27" height="29" viewBox="0 0 27 29">
                 <use href="img/icons/sprite.svg#unmute"></use>
               </svg>
             </button>
 
-            <div class="presentation__video-volume">
-              <div class="presentation__video-volume-bar">
-                <svg class="play-pause-icon" width="100%" height="6" viewBox="0 0 120 6">
-                  <use href="img/icons/sprite.svg#progress"></use>
-                </svg>
-              </div>
-              <div class="presentation__video-volume-id">
-                <svg class="play-pause-icon" width="18" height="18" viewBox="0 0 18 18">
-                  <use href="img/icons/sprite.svg#id"></use>
-                </svg>
-              </div>
+            <div class="presentation__video-progress presentation__video-progress-volume">
+              <svg class="presentation__video-progress-bar" id="volume-bar" width="100%" height="6">
+                <use href="img/icons/sprite.svg#progress"></use>
+              </svg>
+              <svg class="presentation__video-progress-id" id="volume-id" width="18" height="18" viewBox="0 0 18 18">
+                <use href="img/icons/sprite.svg#id"></use>
+              </svg>
             </div>
 
           </div>
@@ -1453,7 +1453,7 @@
     <script src="./js/modules/menu.js"></script>
     <script src="./js/modules/nav-menu.js"></script>
     <!-- <script src="./js/modules/slider.js"></script> -->
-    <script src="./js/modules/modal-reviews.js"></script>
+    <script src="./js/modules/modal.js"></script>
     <script src="./js/modules/form.js"></script>
     <script src="./js/modules/video.js"></script>
     <script src="./js/modules/map.js"></script>

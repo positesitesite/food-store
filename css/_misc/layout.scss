@@ -5,6 +5,10 @@ html {
   @include phones {
     font-size: 14px;
   }
+
+  @include smallphones {
+    font-size: 10px;
+  }
 }
 
 html,

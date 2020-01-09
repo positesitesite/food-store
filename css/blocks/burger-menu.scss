@@ -11,5 +11,9 @@
   position: absolute;
   top: 6.125rem;
   left: 5.9375rem;
+
+  @include phones {
+    display: none;
+  }
 }
 

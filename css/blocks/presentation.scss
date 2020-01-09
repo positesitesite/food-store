@@ -5,6 +5,12 @@
   background-position: center;
 }
 
+.presentation__title {
+  @include phones {
+    font-size: 3.5rem;
+  }
+}
+
 .presentation__video.container {
   display: flex;
   justify-content: center;
@@ -15,6 +21,23 @@
 .presentation__video-player {
   width: 100%;
   height: 100%;
+}
+
+.presentation__video-begin {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+}
+
+.presentation__video-begin-icon {
+  height: 7.375rem;
+  width: 5.125rem;
+  fill: $white;
+  stroke: $white;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width:12px;
 }
 
 .presentation__video-controls {
@@ -36,14 +59,27 @@ button#play-pause {
   width: 60vw;
 }
 
-.presentation__video-progress-bar {
-  left: 0;
-}
-
 .presentation__video-progress-id {
   position: absolute;
-  left: 0;
   top: 0;
-  transform: translate(0%, 20%);
+  transform: translate(-40%, 20%);
 }
 
+// Duration default position
+#progress-id {
+  left: 0%;
+}
+
+// Volume default position
+#volume-id {
+  left: 100%;
+}
+
+.presentation__video-progress-volume {
+  width: 25%;
+  margin-right: 1rem;
+}
+
+.presentation__video-begin-closed {
+  display: none;
+}

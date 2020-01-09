@@ -65,9 +65,12 @@
 
 .burger__price {
   display: flex;
-  // flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-end;
+
+  @include tablets {
+    justify-content: center;
+  }
 
   &-title {
     display: flex;

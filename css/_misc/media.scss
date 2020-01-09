@@ -15,3 +15,9 @@
     @content;
   }
 }
+
+@mixin smallphones {
+  @media screen and (max-width: 395px) {
+    @content;
+  }
+}
