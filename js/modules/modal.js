@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const reviewsContent = document.querySelectorAll('.reviews__hover-text');
 const reviewsItems = document.querySelectorAll('.reviews__item');
 

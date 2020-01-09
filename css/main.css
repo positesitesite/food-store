@@ -1257,11 +1257,17 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
     .accordeon__textcontent {
       text-align: center; } }
 
+.section .burger-menu {
+  width: 100%; }
+
 .burger-menu .accordeon {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
   @media screen and (max-width: 768px) {
     .burger-menu .accordeon {
       width: 100%; } }
@@ -1271,7 +1277,10 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto; }
 
 .accordeon__trigger {
   display: -webkit-box;
