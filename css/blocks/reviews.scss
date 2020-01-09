@@ -20,6 +20,7 @@
     .reviews__hover {
       opacity: 1;
     }
+
   }
 
   @include tablets {
@@ -61,6 +62,10 @@
   @include ubuntu;
   line-height: 1.475rem;
   margin-bottom: .9375rem;
+
+  @include tablets {
+    display: none;
+  }
 }
 
 .reviews__hover > .btn {
