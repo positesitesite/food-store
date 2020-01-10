@@ -2,7 +2,6 @@
 const reviewsContent = document.querySelectorAll('.reviews__hover-text');
 const reviewsItems = document.querySelectorAll('.reviews__item');
 
-// const burgerContent =
 // const burgerItems =
 
 const modalReviews = document.querySelector('.modal__reviews');
@@ -37,29 +36,29 @@ for (i = 0; i < reviewsItems.length; i++) {
 
 };
 
-for (i = 0; i < reviewsItems.length; i++) {
-  let trigger = reviewsItems[i];
-  let element = reviewsContent[i];
+// for (i = 0; i < reviewsItems.length; i++) {
+//   let trigger = reviewsItems[i];
+//   let element = reviewsContent[i];
 
-  trigger.addEventListener('click', (e) => {
-    e.preventDefault();
+//   trigger.addEventListener('click', (e) => {
+//     e.preventDefault();
 
-    modal.classList.add('modal--active');
-    document.body.classList.add('body__closed');
-    modalContent.textContent = element.textContent;
-  });
+//     modal.classList.add('modal--active');
+//     document.body.classList.add('body__closed');
+//     modalContent.textContent = element.textContent;
+//   });
 
-  btnClose.addEventListener('click', (e) => {
-    e.preventDefault();
+//   btnClose.addEventListener('click', (e) => {
+//     e.preventDefault();
 
-    document.body.classList.remove('body__closed');
-    modal.classList.remove('modal--active');
-  })
+//     document.body.classList.remove('body__closed');
+//     modal.classList.remove('modal--active');
+//   })
 
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      btnClose.click();
-    }
-  })
+//   modal.addEventListener('click', (e) => {
+//     if (e.target === modal) {
+//       btnClose.click();
+//     }
+//   });
 
-};
+// };
