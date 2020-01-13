@@ -362,7 +362,8 @@ body {
   position: relative;
   font-family: 'ubuntu', Helvetica, sans-serif;
   font-weight: 300;
-  color: #2f3234; }
+  color: #2f3234;
+  overflow: hidden; }
 
 .wrapper {
   position: relative;
@@ -393,6 +394,9 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+
+.main {
+  overflow: visible; }
 
 .title {
   font-family: 'gagalin', Helvetica, sans-serif;
@@ -539,7 +543,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 .header {
   position: absolute;
   width: 100%;
-  padding-top: 0.75rem;
+  padding-top: .75rem;
   z-index: 1;
   top: 0; }
 
@@ -560,7 +564,7 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 
 .logo {
   z-index: 100;
-  width: 6.14187rem;
+  width: 6.141875rem;
   height: 4.645rem; }
 
 .hamburger-menu-icon {
@@ -689,13 +693,13 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   text-transform: uppercase; }
 
 .btn {
-  padding: 0.75rem 0.9375rem;
-  border-radius: 0.3125rem;
+  padding: .75rem .9375rem;
+  border-radius: .3125rem;
   background-color: #e35028;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
-  font-size: 0.8125rem; }
+  font-size: .8125rem; }
 
 .promo {
   background-image: url("../img/bg/main.png");
@@ -1213,9 +1217,9 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
 .team__container .accordeon__name {
   font-family: 'gagalin', Helvetica, sans-serif;
   position: relative;
-  font-size: 0.875rem;
+  font-size: .875rem;
   color: #fff;
-  line-height: 1.75812rem;
+  line-height: 1.758125rem;
   position: relative;
   margin-left: 3.025rem;
   margin-bottom: 1.25rem;
@@ -1258,6 +1262,10 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
       -ms-flex-align: center;
       align-items: center; } }
 
+@media screen and (max-width: 768px) {
+  .accordeon__line--reveal {
+    width: calc(100% - 132px); } }
+
 .accordeon__item-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1284,15 +1292,15 @@ body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
   .accordeon__textcontent--title {
     font-family: 'ubuntu', Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 0.875rem;
-    line-height: 1.50063rem;
+    font-size: .875rem;
+    line-height: 1.500625rem;
     color: #fff;
     padding-bottom: .625rem; }
   .accordeon__textcontent--descr {
     font-family: 'ubuntu', Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 0.875rem;
-    line-height: 1.50063rem;
+    font-size: .875rem;
+    line-height: 1.500625rem;
     color: #fff; }
   @media screen and (max-width: 768px) {
     .accordeon__textcontent {

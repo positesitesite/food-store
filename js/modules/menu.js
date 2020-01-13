@@ -1,9 +1,8 @@
-/*jshint esversion: 6 */
-
 const accoItem = document.querySelectorAll('.accordeon__item');
 const accoContent = document.querySelectorAll('.accordeon__content');
 
 const iconElement = document.querySelectorAll('.accordeon__indicator-icon');
+const body = document.querySelectorAll('body')[0];
 
 // Вешаем трекер ивента и добавляем модификатор на accoContent по клику
 for (let index = 0; index < accoItem.length; index++) {
@@ -18,16 +17,24 @@ for (let index = 0; index < accoItem.length; index++) {
     for (let i = 0; i < accoItem.length; i++) {
       if (i !== index) {
         accoContent[i].classList.remove('accordeon__content--reveal');
-
-        // icon.classList.remove('accordeon__indicator-icon--active');
+        accoItem[i].classList.remove('accordeon__line--reveal');
+        if (body.classList.contains('viewing-page-4')) {
+          icon.classList.remove('accordeon__indicator-icon--active');
+        }
       }
       
       if (trigger.classList.contains('accordeon__content--reveal')) {
         trigger.classList.remove('accordeon__content--reveal');
-        // icon.classList.remove('accordeon__indicator-icon--active');
+        element.classList.remove('accordeon__line--reveal');
+        if (body.classList.contains('viewing-page-4')) {
+          icon.classList.remove('accordeon__indicator-icon--active');
+        }
       } else {
         trigger.classList.add('accordeon__content--reveal');
-        // icon.classList.add('accordeon__indicator-icon--active');
+        element.classList.add('accordeon__line--reveal');
+        if (body.classList.contains('viewing-page-4')) {
+          icon.classList.add('accordeon__indicator-icon--active');
+        }
       }
     }
   });

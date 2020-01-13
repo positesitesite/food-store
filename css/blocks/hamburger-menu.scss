@@ -1,13 +1,9 @@
-$width: 28px;
-$height: 7px;
-
-
 .hamburger-menu-icon {
   position: relative;
   display: none;
   margin-left: 10px;
-  width: $width;
-  height: $height;
+  width: 28px;
+  height: 7px;
   border-radius: 5px;
   background-color: $white;
   
@@ -19,9 +15,9 @@ $height: 7px;
     content: '';
     display: block;
     position: absolute;
-    width: $width;
+    width: 28px;
     margin-top: -12px;
-    height: $height;
+    height: 7px;
     border-radius: 5px;
     background-color: $white;
   }
@@ -29,9 +25,9 @@ $height: 7px;
     content: '';
     display: block;
     position: absolute;
-    width: $width;
+    width: 28px;
     margin-top: 12px;
-    height: $height;
+    height: 7px;
     border-radius: 5px;
     background-color: $white;
   }

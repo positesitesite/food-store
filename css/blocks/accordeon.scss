@@ -34,7 +34,6 @@
   display: block;
   width: 10px;
   position: absolute;
-  // left: -10%;
   top: .625rem;
 
 
@@ -46,9 +45,9 @@
 .team__container .accordeon__name {
   @include gagalin();
   position: relative;
-  font-size: .875rem /* 14/16 */;
+  font-size: .875rem;
   color: $white;
-  line-height: 1.758125rem /* 28.13/16 */;
+  line-height: 1.758125rem;
   position: relative;
   margin-left: 3.025rem;
   margin-bottom: 1.25rem;
@@ -86,6 +85,12 @@
   }
 }
 
+.accordeon__line--reveal{
+  @include tablets {
+    width: calc(100% - 132px);
+  }
+}
+
 .accordeon__item-hidden {
   display: flex;
   justify-content: space-between;
@@ -109,16 +114,16 @@
   
   &--title {
     @include ubuntu(bold);
-    font-size: .875rem /* 14/16 */;
-    line-height: 1.500625rem /* 24.01/16 */;
+    font-size: .875rem;
+    line-height: 1.500625rem;
     color: $white;
     padding-bottom: .625rem;
   }
   
   &--descr {
     @include ubuntu();
-    font-size: .875rem /* 14/16 */;
-    line-height: 1.500625rem /* 24.01/16 */;
+    font-size: .875rem;
+    line-height: 1.500625rem;
     color: $white;
   }
 
@@ -148,8 +153,6 @@
   position: relative;
   display: flex;
   flex: 0 0 auto;
-  // width: 6.25rem;
-  // max-width: 6.25rem;
 }
 
 .accordeon__trigger {

@@ -1,4 +1,3 @@
-
 $(document).ready(() => {
 
   let moveSlide = function(container, slideNum) {

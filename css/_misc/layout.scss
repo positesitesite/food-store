@@ -24,6 +24,7 @@ body {
   position: relative;
   @include ubuntu();
   color: $black;
+  overflow: hidden;
 }
 
 .wrapper {
@@ -49,6 +50,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.main {
+  overflow: visible;
 }
 
 .title {

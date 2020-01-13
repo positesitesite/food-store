@@ -1,8 +1,6 @@
 const hamburgerMenu = document.querySelector('#hamburger-menu');
 const navHiddenList = document.querySelector('#nav__hidden-list');
 const navHiddenBtn = document.querySelector('#nav__hidden-btn');
-// const body = document.body;
-
 
 hamburgerMenu.addEventListener('click', (e) => {
   e.preventDefault();
